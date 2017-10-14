@@ -10,7 +10,6 @@ $(document).ready(function(){
 		var scroll = $(window).scrollTop();
 
 
-		console.log(scroll);
 		if (scroll > 90)
 		
 		{
@@ -27,26 +26,63 @@ $(document).ready(function(){
 
 
 	$('.multi-item-carousel').carousel({
-	  interval: 3000
+	  interval: false
 	});
 
 
 	$('.multi-item-carousel .item').each(function(){
-	  var next = $(this).next();
-	  if (!next.length) {
-	    next = $(this).siblings(':first');
-	  }
-	  next.children(':first-child').clone().appendTo($(this));
-	  
-	  for (var i = 0; i < 2; i++) {
-		next = next.next();
-		if (!next.length) {
-			next = $(this).siblings(':first');
-		}
+	   var itemToClone = $(this);
 
-		next.children(':first-child').clone().appendTo($(this));
-	}
+    for (var i=1;i<4;i++) {
+      itemToClone = itemToClone.next();
+
+      // wrap around if at end of item collection
+      if (!itemToClone.length) {
+        itemToClone = $(this).siblings(':first');
+      }
+
+      // grab item, clone, add marker class, add to collection
+      itemToClone.children(':first-child').clone()
+        .addClass("cloneditem-"+(i))
+        .appendTo($(this));
+    }
 	});
-				
-		
-})
+	if ($(window).width() < 768)
+		{
+				$(".multi-item-carousel .item").each(function(){
+					if(!($(this).hasClass("active")))
+					{
+						$(this).addClass("active");
+					}
+				})
+		}
+		else
+		{
+			$("#topweekend .item:not(:first-child)").each(function(){
+				$(this).removeClass("active");
+			})
+			$("#topseller .item:not(:first-child)").each(function(){
+				$(this).removeClass("active");
+			})
+		}
+	$(window).resize(function(){
+		if ($(window).width() < 768)
+		{
+				$(".multi-item-carousel .item").each(function(){
+					if(!($(this).hasClass("active")))
+					{
+						$(this).addClass("active");
+					}
+				})
+		}
+		else
+		{
+			$("#topweekend .item:not(:first-child)").each(function(){
+				$(this).removeClass("active");
+			})
+			$("#topseller .item:not(:first-child)").each(function(){
+				$(this).removeClass("active");
+			})
+		}
+	})
+});

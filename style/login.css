@@ -5,6 +5,10 @@
   display: block;
   margin-top: 20px;
 }
+.row{
+  background-color: white;
+  margin-top: 20px;
+}
 .close-modal{
   background: white; 
   position: absolute;
@@ -330,105 +334,7 @@ ul.form li a{
 .modalLogin .card .footer a:hover {
   color: #bababa;
 }
-.modalLogin .card.alt {
-  position: absolute;
-  top: 40px;
-  right: -70px;
-  z-index: 10;
-  width: 140px;
-  height: 140px;
-  background: none;
-  border-radius: 100%;
-  box-shadow: none;
-  padding: 0;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  /* Toggle */
-  /* Title */
-  /* Input */
-  /* Button */
-}
-.modalLogin .card.alt .toggle {
-  position: relative;
-  background: #ed2553;
-  width: 140px;
-  height: 140px;
-  border-radius: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  color: #ffffff;
-  font-size: 58px;
-  line-height: 140px;
-  text-align: center;
-  cursor: pointer;
-}
-.modalLogin .card.alt .toggle:before {
-  content: '\f040';
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-.modalLogin .card.alt .title,
-.modalLogin .card.alt .input-container,
-.modalLogin .card.alt .button-container {
-  left: 100px;
-  opacity: 0;
-  visibility: hidden;
-}
-.modalLogin .card.alt .title {
-  position: relative;
-  border-color: #ffffff;
-  color: #ffffff;
-}
-.modalLogin .card.alt .title .close {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 60px;
-  display: inline;
-  color: #ffffff;
-  font-size: 58px;
-  font-weight: 400;
-}
-.modalLogin .card.alt .title .close:before {
-  content: '\00d7';
-}
-.modalLogin .card.alt .input-container input {
-  color: #ffffff;
-}
-.modalLogin .card.alt .input-container input:focus ~ label {
-  color: #ffffff;
-}
-.modalLogin .card.alt .input-container input:focus ~ .bar:before, .modalLogin .card.alt .input-container input:focus ~ .bar:after {
-  background: #ffffff;
-}
-.modalLogin .card.alt .input-container input:valid ~ label {
-  color: #ffffff;
-}
-.modalLogin .card.alt .input-container label {
-  color: rgba(255, 255, 255, 0.8);
-}
-.modalLogin .card.alt .input-container .bar {
-  background: rgba(255, 255, 255, 0.8);
-}
-.modalLogin .card.alt .button-container button {
-  width: 100%;
-  background: #ffffff;
-  border-color: #ffffff;
-}
-.modalLogin .card.alt .button-container button span {
-  color: #ed2553;
-}
-.modalLogin .card.alt .button-container button:hover {
-  background: rgba(255, 255, 255, 0.9);
-}
-.modalLogin .card.alt .button-container button:active:before, .modalLogin .card.alt .button-container button:focus:before {
-  display: none;
-}
+
 
 /* Keyframes */
 @-webkit-keyframes buttonFadeInUp {
