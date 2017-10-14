@@ -10,114 +10,176 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
   <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/login.css">
+  <link rel="stylesheet" href="style/book.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
   <script src="https://use.fontawesome.com/9c1074407f.js"></script>
 </head>
 <body>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	    <!-- Modal content-->
+	    <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <div id="modalLogin" class="modalLogin">
+					<div class="container">
+					  <div class="card">
+					  	<span class="glyphicon glyphicon-remove close-modal" ></span>
+					  	<ul class="form">
+					  		<li class="active" id="login"><a>Login</a></li>
+				  			<li id="register"><a >Register</a></li>
+				  			<li class="Tabs-presentation-slider" role="presentation"></li>
+					  	</ul>
+					  	<div class="login active" id="login-form">
+						    <form>
+						      <div class="input-container">
+						        <input type="email" id="email" required="required" />
+						        <label for="user_name">Username</label>
+						        <div class="bar"></div>
+						      </div>
+						      <div class="input-container">
+						        <input type="password" id="password" required="required" />
+						        <label for="password">Password</label>
+						        <div class="bar"></div>
+						      </div>
+						      <div class="button-container">
+						        <button><span>Log In</span></button>
+						      </div>
+						      <div class="footer"><a href="#">Forgot your password?</a></div>
+						    </form>
+						  </div>
+					    <div class="register" id="register-form">
+						    <form>
+						      <div class="input-container">
+						        <input type="email" id="email" required="required"/>
+						        <label for="user_name">Username</label>
+						        <div class="bar"></div>
+						      </div>
+						      <div class="input-container">
+						        <input type="password" id="password" required="required"/>
+						        <label for="password">Password</label>
+						        <div class="bar"></div>
+						      </div>
+						      <div class="input-container">
+						        <input type="password" id="password" required="required"/>
+						        <label for="password">Repeat Password</label>
+						        <div class="bar"></div>
+						      </div>
+						      <div class="button-container">
+						        <button><span>Next</span></button>
+						      </div>
+						    </form>
+						   </div>
+					  	</div>
+					  
+					</div>		
+			    </div>
+	  		  </div>
+	  		</div>
+ 		 </div>
+	</div>
+	<!-- Modal end-->
+
 	<!-- header start -->
-	<div class="stuck-nav">
 		<nav class="navbar navbar-static-top">
 		  <div class="container">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
+		        <div class="icon-bar top"></div>
+		        <div class="icon-bar mid"></div>
+		        <div class="icon-bar bot"></div>                        
 		      </button>
-		      <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+		      <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i> BKBOOK</a>
 		    </div>
 
 		    <div class="navbar-right" id="myNavbar">
 		    	<div class="sidebar">
 		      	<ul class="nav navbar-nav navbar-right">
-			      		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Your cart  <span class="badge">2</span> </a></li>
-		        	<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			      		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Your cart  <span class="label label-default">2</span> </a></li>
+		        		<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 		      	</ul>
 		    	</div>
 		    </div>
 		  </div>
 		</nav>
-	</div>
 	<!-- header end -->
-	<div class="stuck-nav isstuck" style="background-color: black;">
-		<nav class="navbar-fixed-top navbar navbar-inverse">
-
-			<div class="container">
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle">
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>                        
-			      </button>
-			      <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
-			    </div>
-
-			    <div class="navbar-right" id="myNavbar">
-			    	<div class="sidebar">
-			      	<ul class="nav navbar-nav navbar-right">
-				      		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Your cart  <span class="badge">2</span> </a></li>
-			        	<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			      	</ul>
-			    	</div>
-			    </div>
-			  </div>
-		</nav>
-	</div>
-	<div class="menu-book">
-
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-6">
+					<div class="item-book">
+						<div class="image-book">
+						</div>
+						<div class="content-block">
+							<h4>coc</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1>Top Book weekend</h1>
+					<h1 class="title">Top Book weekend</h1>
 		      <div class="carousel slide multi-item-carousel" id="topweekend">
 		        <div class="carousel-inner">
 		          <div class="item active">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a>
+		            <div class="col-xs-3">
+		            	<div class="book-list">
+		            		<a href="#1"><img src="images/img592.u3059.d20170616.t101749.921069.jpg" ></a>
+		            		<div class="icon-self">
+		            			<span class="badge">22</span>
+		            		</div>
+		            	</div>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3 "><a href="#1"><img src="images/img894.u3059.d20170616.t102330.519090.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/kheo-an-noi-se-co-duoc-thien-ha.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/khi-hoi-tho-hoa-thinh-khong.u5464.d20170726.t170655.288851.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/khong-gia-dinh.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/bia-1---mac-ke-thien-ha.u5102.d20170323.t155756.324847.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/co-gai-den-tu-hom-qua_bia-moi_ban-thuong.u5131.d20170607.t100057.355539.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/giet-con-chim-nhai_2_2.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/hanh_trinh_ve_phuong_dong_2.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
 		            <div class="col-xs-3">
-		            	<a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a>
+		            	<a href="#1"><img src="images/img117.u3059.d20170616.t100547.729023.jpg" ></a>
 		            </div>
 		          </div>
 		        </div>
@@ -126,56 +188,56 @@
 		      </div>
 				</div>
 				<div class="col-md-12">
-					<h1>Top best sellers</h1>
+					<h1 class="title">Top best sellers</h1>
 		      <div class="carousel slide multi-item-carousel" id="topseller">
 		        <div class="carousel-inner">
 		          <div class="item active">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/f44336/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a>
+		            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" ></a>
 		            </div>
 		          </div>
 		          <div class="item">
 		            <div class="col-xs-3">
-		            	<a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a>
+		            	<a href="#1"><img src="http://placehold.it/300/8bc34a/000000" ></a>
 		            </div>
 		          </div>
 		        </div>
@@ -184,7 +246,7 @@
 		      </div>
 				</div>
 			</div>
-		</div>
+		</div>	
 	</div>
 	<footer>
 	</footer>
