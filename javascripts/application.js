@@ -25,64 +25,76 @@ $(document).ready(function(){
 	
 
 
-	$('.multi-item-carousel').carousel({
-	  interval: false
-	});
+	
+	 $('#topweekend').owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 3000,
+    margin:20,
+    mouseDrag: false,
+    autoplayHoverPause: true,
+    nav: true,
+	  navText: [
 
+	  ],
+    responsive:{
+        0:{
+        	items:1
+        }
+        ,
+        480:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        992:{
+        		items:4
+        },
+        1200:{
+            items:5
+        }
 
-	$('.multi-item-carousel .item').each(function(){
-	   var itemToClone = $(this);
-
-    for (var i=1;i<4;i++) {
-      itemToClone = itemToClone.next();
-
-      // wrap around if at end of item collection
-      if (!itemToClone.length) {
-        itemToClone = $(this).siblings(':first');
-      }
-
-      // grab item, clone, add marker class, add to collection
-      itemToClone.children(':first-child').clone()
-        .addClass("cloneditem-"+(i))
-        .appendTo($(this));
     }
-	});
-	if ($(window).width() < 768)
-		{
-				$(".multi-item-carousel .item").each(function(){
-					if(!($(this).hasClass("active")))
-					{
-						$(this).addClass("active");
-					}
-				})
-		}
-		else
-		{
-			$("#topweekend .item:not(:first-child)").each(function(){
-				$(this).removeClass("active");
-			})
-			$("#topseller .item:not(:first-child)").each(function(){
-				$(this).removeClass("active");
-			})
-		}
-	$(window).resize(function(){
-		if ($(window).width() < 768)
-		{
-				$(".multi-item-carousel .item").each(function(){
-					if(!($(this).hasClass("active")))
-					{
-						$(this).addClass("active");
-					}
-				})
-		}
-		else
-		{
-			$("#topweekend .item:not(:first-child)").each(function(){
-				$(this).removeClass("active");
-			})
-			$("#topseller .item:not(:first-child)").each(function(){
-				$(this).removeClass("active");
-			})
-		}
+})
+	 $('#topseller').owlCarousel({
+	 	autoplay: true,
+    autoplayTimeout: 3000,
+    margin:20,
+    mouseDrag: false,
+    autoplayHoverPause: true,
+    nav: true,
+	  navText: [
+	    
+	  ],
+    esponsive:{
+        0:{
+        	items:1
+        }
+        ,
+        480:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        992:{
+        		items:4
+        },
+        1200:{
+            items:5
+        }
+
+    }
+   
 	})
+	 $("#slideshow-home").owlCarousel({
+   	autoplay:false,
+   	autoplayTimeout: 4000,	
+   	items:1,
+   	margin:0,
+   	nav:true,
+   	navText:[
+   	]
+   })
+
 });

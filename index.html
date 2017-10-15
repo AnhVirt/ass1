@@ -7,15 +7,19 @@
 	<!-- Latest compiled and minified CSS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
+  <script src="https://use.fontawesome.com/9c1074407f.js"></script>
+	<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   <script src="javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
   <link rel="stylesheet" href="style/header.css">
   <link rel="stylesheet" href="style/login.css">
   <link rel="stylesheet" href="style/book.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
-  <script src="https://use.fontawesome.com/9c1074407f.js"></script>
+ 
 </head>
 <body>
 
@@ -107,216 +111,225 @@
 		  </div>
 		</nav>
 	<!-- header end -->
-	
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-xs-6">
-					<div class="item-book">
-						<div class="image-book">
+	<div class="slide-home">
+		<section class="">
+			<div class="owl-carousel owl-theme"  id="slideshow-home">
+				<div class="book-advance book-1" style="background-image: url(images/home/slider2.jpg);">
+					<div class="container">
+						<div class="row">
+							<div class="description">
+								<span class="title">NEW SESSION</span>
+								<span class="sub-title">BOOK 40% OFF</span>
+								<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
+								<a href class="btn btn-buy">BUY NOW</a>
+							</div>
 						</div>
-						<div class="content-block">
-							<h4>coc</h4>
+					</div>
+				</div>
+				<div class="book-advance book-2" style="background-color: #ffc886;" >
+					<div class="container">
+						<div class="row">
+							<div class="image-book">
+								<img src="images/home/tao-thao-thanh-nhan-de-tien-tap-1.png" style="height: 600px;width: auto;">
+							</div>
+							<div class="description">
+								<span class="title">TÀO THÁO</span>
+								<span class="sub-title">BOOK 40% OFF</span>
+								<span class="des">  “Thà người thiên hạ phụ ta chứ ta quyết không phụ người trong thiên hạ”</span>
+								<a href class="btn btn-buy">BUY NOW</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="book-advance book-3" style="background-image: url(images/home/slider4.jpg);">
+					<div class="container">
+						<div class="row">
+							<div class="description" style="float:left;">
+								<span class="title">NEW SESSION</span>
+								<span class="sub-title">BOOK 40% OFF</span>
+								<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
+								<a href class="btn btn-buy">BUY NOW</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+	</div>
+		<div class="container">
+		
 			<div class="row topweekend">
 				<div class="col-md-12">
 					<h1 class="title">Top Book weekend</h1>
-		      <div class="carousel slide multi-item-carousel" id="topweekend">
-		        <div class="carousel-inner">
-		          <div class="item active">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            		<a href="#1"><img src="images/img592.u3059.d20170616.t101749.921069.jpg" ></a>
+		      <div class="owl-carousel owl-theme"  id="topweekend">
+		      	<!-- <div class="carousel-inner"> -->
+		          <div class="item">
+	            	<div class="book-list">
+		        	  	<a href="#">
+		            		<img src="images/img592.u3059.d20170616.t101749.921069.jpg" >
 		            		<div class="icon-self">
-		            			<span class="badge">22</span>
+		            			<span class="badge badge-deal">22
+		            			</span>
 		            		</div>
 		            		<div class="content-book">
-		            			<h2>Dac nhan tam</h2>
-		            			<span> </span>
+		            			<p class="title">Dac nhan tam</p>
+		            			<p class="price-sale">50000 ₫ 
+		            				<span class="price-regular">60000 ₫</span>
+		            			</p>
+		            			<p></p>
+		            		</div>
+	            		</a>
+		            		<div class="box-btn">
+		            			<div class="btn-img">
+		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+		            				</button>
+		            			</div>
+		            			<div class="btn-img">
+		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
+		            				</button>
+		            			</div>
 		            		</div>
 		            	</div>
-		            </div>
 		          </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3 ">
-		            	<div class="book-list">
-		            		<a href="#1"><img src="images/img894.u3059.d20170616.t102330.519090.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/img894.u3059.d20170616.t102330.519090.jpg" ></a>
+	            		<div class="icon-self">
+          					<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/kheo-an-noi-se-co-duoc-thien-ha.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/kheo-an-noi-se-co-duoc-thien-ha.jpg" ></a>
+	            		<div class="icon-self">
+          					<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/khi-hoi-tho-hoa-thinh-khong.u5464.d20170726.t170655.288851.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/khi-hoi-tho-hoa-thinh-khong.u5464.d20170726.t170655.288851.jpg" ></a>
+	            		<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/khong-gia-dinh.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/khong-gia-dinh.jpg" ></a>
+	            		<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" ></a>
+	            		<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/bia-1---mac-ke-thien-ha.u5102.d20170323.t155756.324847.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/bia-1---mac-ke-thien-ha.u5102.d20170323.t155756.324847.jpg" ></a>
+	            		<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/co-gai-den-tu-hom-qua_bia-moi_ban-thuong.u5131.d20170607.t100057.355539.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/co-gai-den-tu-hom-qua_bia-moi_ban-thuong.u5131.d20170607.t100057.355539.jpg" ></a>
+	            		<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/giet-con-chim-nhai_2_2.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/giet-con-chim-nhai_2_2.jpg" ></a>
+	            		<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/hanh_trinh_ve_phuong_dong_2.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/hanh_trinh_ve_phuong_dong_2.jpg" ></a>
+	            	<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" ></a>
+	            		<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
 		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<div class="book-list">
-		            	<a href="#1"><img src="images/img117.u3059.d20170616.t100547.729023.jpg" ></a>
-		            	<div class="icon-self">
-		            			<span class="badge">22</span>
-		            		</div>
-		            	</div>
-		            </div>
-		          </div>
-		        </div>
-		        <a class="left carousel-control" href="#topweekend" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-		        <a class="right carousel-control" href="#topweekend" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	            	<div class="book-list">
+	            		<a href="#1"><img src="images/img117.u3059.d20170616.t100547.729023.jpg" ></a>
+	            		<div class="icon-self">
+	            			<span class="badge badge-deal">22</span>
+	            		</div>
+	            	</div>
+	            </div>
+		        <!-- </div> -->
+		          <!-- <a class="left carousel-control" href="#topweekend" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		        	<a class="right carousel-control" href="#topweekend" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
 		      </div>
 				</div>
 			</div>
 			<div class="row topseller">
 				<div class="col-md-12">
 					<h1 class="title">Top best sellers</h1>
-		      <div class="carousel slide multi-item-carousel" id="topseller">
-		        <div class="carousel-inner">
-		          <div class="item active">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/f44336/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" ></a>
-		            </div>
-		          </div>
-		          <div class="item">
-		            <div class="col-xs-6 col-sm-4 col-md-3">
-		            	<a href="#1"><img src="http://placehold.it/300/8bc34a/000000" ></a>
-		            </div>
-		          </div>
-		        </div>
-		        <a class="left carousel-control" href="#topseller" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-		        <a class="right carousel-control" href="#topseller" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		      <div class="owl-carousel owl-theme" id="topseller">
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/f44336/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/e91e63/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/9c27b0/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/673ab7/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/4caf50/000000" ></a>
+	          </div>
+	          <div class="item">
+	            <a href="#1"><img src="http://placehold.it/300/8bc34a/000000" ></a>
+	          </div>
+	          <div class="item">
+	            
+	            	<a href="#1"><img src="http://placehold.it/300/8bc34a/000000" ></a>
+	          </div>
 		      </div>
 				</div>
 			</div>
 		</div>	
-	</div>
 	<footer>
 	</footer>
 </body>
