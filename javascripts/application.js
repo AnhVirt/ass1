@@ -1,11 +1,18 @@
 $(document).ready(function(){
-	$(".navbar-toggle").click(function(){
-		$("#myNavbar").toggleClass("toggle");
-		$(".navbar-toggle").toggleClass("active");
-		
-		
 
-	});
+  function togglesidebar(){
+    $("#nav-responsive").toggleClass("toggle");
+    $(".wrapper").toggleClass("toggle");
+    $(".navbar-toggle").toggleClass("active");
+    $(".overlay").toggleClass("active");
+  }
+	$(".navbar-toggle").click(togglesidebar);
+  $(".close-sidebar").click(togglesidebar);
+  $(".overlay").click(function(e){
+    if(e.target.id != "nav-responsive")
+     togglesidebar();
+
+  })
 	$(window).scroll(function(){
 		var scroll = $(window).scrollTop();
 
@@ -23,7 +30,7 @@ $(document).ready(function(){
 			}
 	});
 	
-
+  
 
 	
 	 $('#topweekend').owlCarousel({

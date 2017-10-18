@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="style/login.css">
   <link rel="stylesheet" href="style/book.css">
  
+ <link rel="stylesheet" href="style/menu.css">
+ <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
 
@@ -88,74 +90,174 @@
 	</div>
 	<!-- Modal end-->
 
-	<!-- header start -->
-		<nav class="navbar navbar-static-top">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle">
-		        <div class="icon-bar top"></div>
-		        <div class="icon-bar mid"></div>
-		        <div class="icon-bar bot"></div>                        
-		      </button>
-		      <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i> BKBOOK</a>
-		    </div>
-
-		    <div class="navbar-right" id="myNavbar">
-		    	<div class="sidebar">
-		      	<ul class="nav navbar-nav navbar-right">
-			      		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Your cart  <span class="label label-default">2</span> </a></li>
-		        		<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		      	</ul>
-		    	</div>
-		    </div>
-		  </div>
-		</nav>
-	<!-- header end -->
-	<div class="slide-home">
-		<section class="">
-			<div class="owl-carousel owl-theme"  id="slideshow-home">
-				<div class="book-advance book-1" style="background-image: url(images/home/slider2.jpg);">
-					<div class="container">
-						<div class="row">
-							<div class="description">
-								<span class="title">NEW SESSION</span>
-								<span class="sub-title">BOOK 40% OFF</span>
-								<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
-								<a href class="btn btn-buy">BUY NOW</a>
+	<div class="wrapper">
+		<!-- header start -->
+			<nav class="navbar navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle">
+			        <div class="icon-bar"></div>
+			        <div class="icon-bar"></div>
+			        <div class="icon-bar"></div>                        
+			      </button>
+			      <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i> BKBOOK</a>
+			    </div>
+					<div class="navbar-left">
+						<div class="search-input">
+						<form action="index.html">
+							<input type="text" class="animation-search" placeholder="Search">	
+							<label class="glyphicon glyphicon-search" type="submit"></label>
+						</form>
+					</div>
+					</div>
+			    <div class="navbar-right" id="myNavbar">
+			    	<div class="sidebar">
+			      	<ul class="nav navbar-nav navbar-right">
+				      		<li><a class="btn btn-shopping-cart" href="#"><i class="fa fa-shopping-cart"></i> Your cart  <span class="label label-default">2</span> </a>
+				      		<div class="dropdown-cart">
+										<ul class="dropdown-cart-hover">
+											<li></li>
+										</ul>
+									</div>
+				      		</li>
+			        		<li><a class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			      	</ul>
+			    	</div>
+			    </div>
+			  </div>
+			</nav>
+		<!-- header end -->
+		<div class="container" id ="menu-desktop">
+			<ul class="menu">
+				<li class="dropdown-hover active">
+					<a href="#">Home</a>
+					<ul>
+				    <li><a href="#">HTML</a></li>
+				    <li><a href="#">CSS</a></li>
+				    <li><a href="#">JavaScript</a></li>
+				  </ul>
+				</li>
+				<li class="dropdown-hover mega-dropdown-menu">
+					<a href="#">Categories</a>
+					<ul>
+						<div class="mega-menu container">
+							<div class="row">
+								<div class="col-sm-2 col-xs-4">
+									<div class="menu-list">
+										<h5>Categories</h5>
+										<a href="#">Technology</a>
+										<a href="#">Fiction</a>
+										<a href="#"> Health & Fitness</a>
+										<a href="#"> History</a>
+										<a href="#"> Mystery</a>
+										<a href="#">Politics & Current Affairs</a>
+									</div>
+								</div>
+								<div class="col-sm-2 col-xs-4">
+									<div class="menu-list">
+										<h5>Categories</h5>
+										<a href="#">Technology</a>
+										<a href="#">Fiction</a>
+										<a href="#"> Health & Fitness</a>
+										<a href="#"> History</a>
+										<a href="#"> Mystery</a>
+										<a href="#">Politics & Current Affairs</a>
+									</div>
+								</div>
+								<div class="col-sm-2 col-xs-4">
+									<div class="menu-list">
+										<h5>Categories</h5>
+										<a href="#">Technology</a>
+										<a href="#">Fiction</a>
+										<a href="#"> Health & Fitness</a>
+										<a href="#"> History</a>
+										<a href="#"> Mystery</a>
+										<a href="#">Politics & Current Affairs</a>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<h3 style="text-align: center;">You should read</h3>
+									<div class="book-img-menu">
+			        	  	<a href="#">
+			            		<img src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+			            		<p>Dac Nhan Tam</p>
+		            		</a>
+		            	</div>
+		            	<div class="book-img-menu">
+			        	  	<a href="#">
+			            		<img src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+			            		<p>Dac Nhan Tam</p>
+			            		
+		            		</a>
+		            	</div>
+		            	<div class="book-img-menu">
+			        	  	<a href="#">
+			            		<img src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+			            		<p>Dac Nhan Tam</p>
+			            		
+		            		</a>
+		            	</div>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</li>
+				<li class="dropdown-hover">
+					<a href="#">Contact</a>
+					<ul>
+						<li>
+							<a href="#">Facebook <i class="fa fa-facebook-square" style="font-size: 30px"></i></a>
+						</li>
+						<li>
+							<a href="#"> Twitter <i class="fa fa-twitter-square" style="font-size: 30px"></i></a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="slide-home">
+			<section class="">
+				<div class="owl-carousel owl-theme"  id="slideshow-home">
+					<div class="book-advance book-1" style="background-image: url(images/home/slider2.jpg);">
+						<div class="container">
+							<div class="row">
+								<div class="description">
+									<span class="title">NEW SESSION</span>
+									<span class="sub-title">BOOK 40% OFF</span>
+									<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
+									<a href class="btn btn-buy">BUY NOW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="book-advance book-2" style="background-image: url(images/home/slider3.jpg);" >
+						<div class="container">
+							<div class="row">
+								<div class="description" style="float:left; left:30px;">
+									<span class="title">NEW SESSION</span>
+									<span class="sub-title">BOOK 40% OFF</span>
+									<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
+									<a href class="btn btn-buy">BUY NOW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="book-advance book-3" style="background-image: url(images/home/slider4.jpg);">
+						<div class="container">
+							<div class="row">
+								<div class="description" style="float:left; left:30px;">
+									<span class="title">NEW SESSION</span>
+									<span class="sub-title">BOOK 40% OFF</span>
+									<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
+									<a href class="btn btn-buy">BUY NOW</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="book-advance book-2" style="background-color: #ffc886;" >
-					<div class="container">
-						<div class="row">
-							<div class="image-book">
-								<img src="images/home/tao-thao-thanh-nhan-de-tien-tap-1.png" style="height: 600px;width: auto;">
-							</div>
-							<div class="description">
-								<span class="title">TÀO THÁO</span>
-								<span class="sub-title">BOOK 40% OFF</span>
-								<span class="des">  “Thà người thiên hạ phụ ta chứ ta quyết không phụ người trong thiên hạ”</span>
-								<a href class="btn btn-buy">BUY NOW</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="book-advance book-3" style="background-image: url(images/home/slider4.jpg);">
-					<div class="container">
-						<div class="row">
-							<div class="description" style="float:left;">
-								<span class="title">NEW SESSION</span>
-								<span class="sub-title">BOOK 40% OFF</span>
-								<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
-								<a href class="btn btn-buy">BUY NOW</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+			</section>
+		</div>
 		<div class="container">
 		
 			<div class="row topweekend">
@@ -195,7 +297,7 @@
 	            	<div class="book-list">
 	            		<a href="#1"><img src="images/img894.u3059.d20170616.t102330.519090.jpg" ></a>
 	            		<div class="icon-self">
-          					<span class="badge badge-deal">22</span>
+	        					<span class="badge badge-deal">22</span>
 	            		</div>
 	            	</div>
 	            </div>
@@ -203,7 +305,7 @@
 	            	<div class="book-list">
 	            		<a href="#1"><img src="images/kheo-an-noi-se-co-duoc-thien-ha.jpg" ></a>
 	            		<div class="icon-self">
-          					<span class="badge badge-deal">22</span>
+	        					<span class="badge badge-deal">22</span>
 	            		</div>
 	            	</div>
 	            </div>
@@ -329,8 +431,142 @@
 		      </div>
 				</div>
 			</div>
-		</div>	
-	<footer>
-	</footer>
+		</div>
+	</div>
+	<nav class="nav-responsive" id="nav-responsive">
+		<span class="glyphicon glyphicon-remove close-sidebar"></span>
+		<div class="user-tab">
+			<span style='left: 100px;top: 10px;color: white;position: absolute;'> Name User </span>
+			<div class="img-name">
+				<img src="images/khong-gia-dinh.jpg" class="img-circle" alt="không">
+			</div>
+			<ul>
+				<li>
+					<a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
+				</li>
+				<li>
+					<a href="#">Sign up</a>
+				</li>
+			</ul>
+		</div>
+		<div class="menu-tab">
+			<ul class="menu">
+				<li class="dropdown-hover active">
+					<a href="#">Home</a>
+					<ul>
+				    <li><a href="#">HTML</a></li>
+				    <li><a href="#">CSS</a></li>
+				    <li><a href="#">JavaScript</a></li>
+				  </ul>
+				</li>
+				<li class="dropdown-hover mega-dropdown-menu">
+					<a href="#">Categories</a>
+					<ul>
+							<div class="mega-menu container">
+								<div class="row">
+									<div class="col-sm-2 col-xs-12">
+										<div class="menu-list">
+											<h5>Categories</h5>
+											<a href="#">Technology</a>
+											<a href="#">Fiction</a>
+											<a href="#"> Health & Fitness</a>
+											<a href="#"> History</a>
+											<a href="#"> Mystery</a>
+											<a href="#">Politics & Current Affairs</a>
+										</div>
+									</div>
+									<div class="col-sm-2 col-xs-12">
+										<div class="menu-list">
+											<h5>Categories</h5>
+											<a href="#">Technology</a>
+											<a href="#">Fiction</a>
+											<a href="#"> Health & Fitness</a>
+											<a href="#"> History</a>
+											<a href="#"> Mystery</a>
+											<a href="#">Politics & Current Affairs</a>
+										</div>
+									</div>
+									<div class="col-sm-2 col-xs-12">
+										<div class="menu-list">
+											<h5>Categories</h5>
+											<a href="#">Technology</a>
+											<a href="#">Fiction</a>
+											<a href="#"> Health & Fitness</a>
+											<a href="#"> History</a>
+											<a href="#"> Mystery</a>
+											<a href="#">Politics & Current Affairs</a>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+					</ul>
+				</li>
+				<li class="dropdown-hover">
+					<a href="#">Contact</a>
+					<ul>
+						<li>
+							<a href="#">Facebook <i class="fa fa-facebook-square" style="font-size: 30px"></i></a>
+						</li>
+						<li>
+							<a href="#"> Twitter <i class="fa fa-twitter-square" style="font-size: 30px"></i></a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+
+	</nav>	
+	<a href="#" class="overlay"></a>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<ul>
+						<h3>About Us</h3>
+						<li>
+							<a href="#">Facebook <i class="fa fa-facebook-square"></i></a>
+						</li>
+						<li>
+							<a href="#">Twitter <i class="fa fa-twitter-square"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<ul>
+						<h3> What's hot</h3>
+						<li><a href="#">Popular Textbooks</a></li>
+						<li><a href="#">Top Rented Textbooks</a></li>
+						<li><a href="#">Rent Textbooks</a></li>
+						<li><a href="#">All Categories</a></li>
+						<li><a href="#">Top Searches</a></li>
+						<li><a href="#">Customer Quotes</a></li>
+						<li><a href="#">Coupons</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<ul>
+						<h3> Support </h3>
+						<li>
+							<a href="#">How to buy book</a>
+						</li>
+						<li>
+							<a href="#">Manager your cart</a>
+						</li>
+						<li>
+							<a href="#">Policy</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<a href="#"><i class="fa fa-book"> </i> BKBOOK</a>
+					<a href="#">Nguyen Anh Viet</a>
+					<a href="#">Nguyen Tuong Vi</a>
+					<a href="#">Nguyen Khuong Duy</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
