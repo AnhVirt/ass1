@@ -25,6 +25,7 @@ li.dropdown-hover > a{
 	position: relative;
 	font-size: 20px;
 }
+
 li.dropdown-hover > a::after{
 	content: "\f107";
 	font-family: FontAwesome;

@@ -1,26 +1,26 @@
-.footer{
+.footer-page{
 	margin-top: 30px;
 	padding-top: 50px;
 	background-color: #1f1f1f;
 }
-.footer h3{
+.footer-page h3{
 	color: white;
 	font-weight: bold;
 	margin-bottom: 15px;
 }
-.footer a{
+.footer-page a{
 	text-decoration: none;
 	display: block;
 	color: #79b4e1;
 	font-size: 17px;
 }
-.footer a:hover{
+.footer-page a:hover{
 	color: #337ab7;
 }
-.footer ul li{
+.footer-page ul li{
 	margin-bottom: 5px;
 }
-.footer a i{
+.footer-page a i{
 	font-size: 50px;
 	margin-left: 40px;
 }
