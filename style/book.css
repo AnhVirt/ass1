@@ -3,6 +3,7 @@ button:focus{
 	box-shadow: none !important;
 }
 .book-list{
+	text-align: center;
 	width: 200px;
 	height: 300px;
 	position: relative;
@@ -40,7 +41,6 @@ button:focus{
 	right: 30px;
 }
 .book-list .box-btn{
-	position: absolute;
 	z-index: 3000;
 	display: inline-flex;
 

@@ -47,12 +47,23 @@
 .col-md-12:hover{
 	box-shadow:   20px 0  0 rgba(255, 0, 0, 0.3);
 }
+button:focus{
+	outline: 0px !important;
+	box-shadow: none !important;
+}
 .book-list{
 	text-align: center;
-	background: white;
+	width: 200px;
+	height: 300px;
+	position: relative;
+	margin:  0 auto;
+
+}
+.book-list a{
+	text-decoration: none;
 }
 .book-list:hover{
-	box-shadow:   0 0   20px rgba(255, 0, 0, 0.3);
+	box-shadow:   0 0  20px rgba(0,0,0,0.2);
 }
 .book-list:hover .box-btn .btn-img{
 	opacity: 1;
@@ -73,15 +84,17 @@
 	padding: 0px;
 	
 }
+.book-list .icon-self{
+	position: absolute;
+	top: 0px;
+	right: 30px;
+}
 .book-list .box-btn{
-	width: 100%;
-	text-align: center;
 	z-index: 3000;
 	display: inline-flex;
 
 }
 .box-btn .btn-img{
-	margin: 0 auto;
 	background-color: #6f9a37;
 	width: 40px;
 	height: 40px;

@@ -28,9 +28,8 @@ $(document).ready(function(){
 				if( scroll >= 0 && scroll < 2)
 				$('.navbar').removeClass("navbar-fixed-top").removeClass("navbar-inverse").addClass("navbar-static-top");
 			}
-	});
-	
-  
+	});         
+
 
 	
 	 $('#topweekend').owlCarousel({
@@ -73,7 +72,7 @@ $(document).ready(function(){
 	  navText: [
 	    
 	  ],
-    esponsive:{
+    responsive:{
         0:{
         	items:1
         }
