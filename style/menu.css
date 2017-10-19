@@ -1,13 +1,17 @@
 
+.select-form{
+	border: 1px solid #dce4ec;
+  border-width: 2px;
+ 	background: #fff;
+	border-radius: 0 !important;
+}
 .dropdown-hover{
 	float: left;
 	position: relative;
-	margin: 10px;
+	margin: 10px 0px;
 	width: 25%;
 }
-.dropdown-hover.active{
-	border-bottom: 2px solid #e91e63;
-}
+
 .dropdown-hover > ul::before{
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
@@ -38,6 +42,73 @@ ul.menu li ul a{
 	font-weight: 400;
 	display: block;
 	margin: 5px 0px;
+}
+ul.menu{
+	position: relative;
+	padding: 0px;
+}
+ul.menu > li.Tabs-presentation-slider{
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+	width: calc(25%);
+	height: 1px;
+	border: 1px solid #e91e63;
+	-webkit-transition: all 1.25s ease;
+	   -moz-transition: all 1.25s ease;
+	    -ms-transition: all 1.25s ease;
+	     -o-transition: all 1.25s ease;
+	        transition: all 1.25s ease;
+}
+ul.menu::after{
+	clear: both;
+	content: '';
+	display: table;
+}
+ul.menu > li.Tabs-presentation-slider::after{
+	clear: both;
+	content: '';
+	display: table;
+}
+ul.menu > li.Tabs-presentation-slider{
+ -webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+
+}
+ul.menu > li:first-child:hover ~ li.Tabs-presentation-slider,ul.menu > li.active:first-child ~ li.Tabs-presentation-slider{
+	left: 0  ;
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+ul.menu > li:nth-child(2):hover ~ li.Tabs-presentation-slider,ul.menu > li.active:nth-child(2) ~ li.Tabs-presentation-slider{
+	left: calc(25% * 1);
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+ul.menu > li:nth-child(3):hover ~ li.Tabs-presentation-slider,ul.menu > li.active:nth-child(3) ~ li.Tabs-presentation-slider{
+	left: calc(25% * 2);
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+ul.menu > li:nth-child(4):hover ~ li.Tabs-presentation-slider,ul.menu > li.active:nth-child(4) ~ li.Tabs-presentation-slider{
+	left: calc(25% * 3);
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
 }
 ul.menu li ul a:hover,ul.menu li ul a:active{
 	color: #e91e63;
@@ -86,10 +157,10 @@ ul.menu li ul{
 .dropdown-hover:hover  > ul,.dropdown-hover:active  > ul{
 	visibility: visible;
 	opacity: 1;
-	margin-top: 2px;
+	margin-top: 10px;
 }
 .dropdown-hover ul li {
-	padding: 10px 0px;
+	padding: 15px 0px;
 }
 .dropdown-hover > ul > li:hover,.dropdown-hover > ul > li:active{
 	-webkit-transition: all .25s ease-in-out ;
@@ -116,56 +187,12 @@ ul.menu li ul{
 .mega-menu{
 	padding: 20px;
 }
-.nav-responsive{
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 1030;
-	width: 230px;
-	background-color: #fff;	
-	height: 100vh;
-	overflow-y: scroll;
-	transition: all 0.5s ease;
-	-webkit-transform: translateX(-150%);
-	   -moz-transform: translateX(-150%);
-	    -ms-transform: translateX(-150%);
-	     -o-transform: translateX(-150%);
-	        transform: translateX(-150%);
-}
-.nav-responsive .user-tab{
-	width: 100%;
-	background-color: #337ab7;
-	height: 60px;
+
+
+
+
+.search-input{
 	position: relative;
-	margin: 0 auto;
-
-}
-.nav-responsive .user-tab  img {
-	width: 50px;
-	height: 50px;
-	overflow: hidden;
-	text-align: center;
-	margin-left: 5px;
-	margin-top: 5px;
-
-}
-.nav-responsive .user-tab > ul{
-	display: flex;
-	bottom: 5px;
-	left: 60px;
-	position: absolute;
-	margin: 0;
-	padding: 0;
-
-}
-.nav-responsive .user-tab > ul > li{
-	margin-left: 20px;
-
-}
-.nav-responsive .user-tab > ul > li > a{
-	color: white;
-	font-weight: bold;
-	text-decoration: none;
 }
 
 @media (max-width: 992px) {
@@ -186,14 +213,7 @@ ul.menu li ul{
 	     -o-transform: translateX(0);
 	        transform: translateX(0);
 	}
-	ul.menu li.mega-dropdown-menu > ul{
-		width: calc(100% - 80px);
-		margin-left: -20px;
-	}
 	
-	.wrapper.toggle .navbar-fixed-top{
-		transition: all 0.5s ease;
-	}
 }
 .close-sidebar{
 	position: absolute;
@@ -206,7 +226,7 @@ ul.menu li ul{
 }
 .overlay{
 	position: fixed;
-	z-index: 500;
+	z-index: 1020;
 	background-color: rgba(0,0,0,0.5);
 	top: 0;
 	left: 0;

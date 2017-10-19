@@ -8,6 +8,8 @@ h1,h2,h3,h4,h5,h6{
 }
 ul{
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 .col-md-12{
 	background-color: white;
@@ -37,8 +39,8 @@ ul{
   padding: 10px 0px;
 }
 .navbar-brand{
-	font-size: 40px;
-	padding: 5px 15px;
+	font-size: 30px;
+	padding: 0px;
 }
 .content-left{
 	background-color:#c1c1d4;
@@ -79,6 +81,7 @@ ul{
 
 .navbar-right{
 		margin-right: 0 !important;
+		display: flex;
 	}
 .btn-shopping-cart, .btn-loggin{
 	background-color: #269bae;
@@ -185,6 +188,9 @@ li a.btn-shopping-cart ~ .dropdown-cart,li a.btn-loggin ~ .dropdown-login{
 	padding: 10px;
 	font-size: 15px;
 }
+.dropdown-cart-hoverbefore li,.dropdown-login-hover li {
+	margin: 10px 0;
+}
 .dropdown-cart-hover::before,.dropdown-login-hover::before{
 	border-bottom: 20px solid #ffffc8;
 	border-right: 20px solid transparent;
@@ -196,6 +202,8 @@ li a.btn-shopping-cart ~ .dropdown-cart,li a.btn-loggin ~ .dropdown-login{
 	content: "";
 	display: table;
 }
+
+
 @media (max-width: 767px){
 	.navbar-nav{
 		margin:  0px;
@@ -247,3 +255,4 @@ li a.btn-shopping-cart ~ .dropdown-cart,li a.btn-loggin ~ .dropdown-login{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 	}
+}

@@ -3,6 +3,7 @@ button:focus{
 	box-shadow: none !important;
 }
 .book-list{
+	text-align: center;
 	width: 200px;
 	height: 300px;
 	position: relative;
@@ -40,8 +41,7 @@ button:focus{
 	right: 30px;
 }
 .book-list .box-btn{
-	position: absolute;
-	z-index: 3000;
+	z-index: 500;
 	display: inline-flex;
 
 }
@@ -62,7 +62,7 @@ button:focus{
     -ms-transition: all .25s ease 0s;
      -o-transition: all .25s ease 0s;
         transition: all .25s ease 0s;
-  z-index: 3000;
+  z-index: 500;
 }
 .btn-img .fa[class*="fa-"] {
 	font-size: 20px;
@@ -215,39 +215,4 @@ h1.title{
 		display: block;
 		width: 100px;
 	}
-}
-.search-input{
-	position: relative;
-	border-radius: 50px;
-	background-color: white;
-}
-.search-input label{
-	position: absolute;
-  top: 15px;
-  left: 15px;
-  color: #ccc;
-  font-size: 20px;
-  transition: all 0.5s ease-out;
-}
-.animation-search{
-	position: relative;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	border: none;
-	outline: none;
-	background: none;
-	z-index: 1;
-	padding: 20px 30px 20px 20px;
-	transition: width 0.2s ease-in-out;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
-}
-.animation-search:focus{
-	width: 250px;
-	transition: width 0.5s ease-in-out;
-}
-.animation-search:focus + label.glyphicon-search{
-	left:  calc(100% - 40px);
-	z-index: 2;
-	transition: all 0.2s ease-out;
 }

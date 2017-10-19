@@ -5,9 +5,18 @@ $(document).ready(function(){
     $(".wrapper").toggleClass("toggle");
     $(".navbar-toggle").toggleClass("active");
     $(".overlay").toggleClass("active");
+    if (!($("#nav-responsive").hasClass("toggle")))
+    {
+      $(".nav-sub .responsive-tab-sub").each(function(){
+        $(this).css("visibility","hidden");
+      })
+    $(".nav-main").removeClass("menu-sub-open")
+    }
+      
   }
 	$(".navbar-toggle").click(togglesidebar);
   $(".close-sidebar").click(togglesidebar);
+  
   $(".overlay").click(function(e){
     if(e.target.id != "nav-responsive")
      togglesidebar();
@@ -28,9 +37,8 @@ $(document).ready(function(){
 				if( scroll >= 0 && scroll < 2)
 				$('.navbar').removeClass("navbar-fixed-top").removeClass("navbar-inverse").addClass("navbar-static-top");
 			}
-	});
-	
-  
+	});         
+
 
 	
 	 $('#topweekend').owlCarousel({
@@ -73,7 +81,7 @@ $(document).ready(function(){
 	  navText: [
 	    
 	  ],
-    esponsive:{
+    responsive:{
         0:{
         	items:1
         }
@@ -103,5 +111,13 @@ $(document).ready(function(){
    	navText:[
    	]
    })
-
+   $(".btn-cart").click(function(){
+    $("body").append('<div class="alert alert-success alert-dismissible" style="position:fixed;top:5%;right:10px">You have add a book to your cart</div>');
+    $(".alert").fadeOut(3000,function(){$(this).remove()});
+   })
+   $(".btn-heart").click(function(){
+    $("body").append('<div class="alert alert-info alert-dismissible" style="position:fixed;top:15%;right:10px">You have add a book to your cart</div>');
+    $(".alert").fadeOut(3000,function(){$(this).remove()});
+   })
+  
 });

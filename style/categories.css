@@ -1,0 +1,114 @@
+.categories{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+.group-book{
+  margin-top: 50px;
+}
+.responsive-search{
+  display: none;
+  z-index: 1000;
+}
+.search-option-filed,.search-price-filed{
+  display: none;
+}
+@media (max-width: 767px){
+  ..group-seach{
+    display: none;
+  }
+  .responsive-search{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+  }
+
+  .responsive-search .search-price,.responsive-search .search-option{
+    width: 50%;
+    height: 100%;
+    
+  }
+  .responsive-search .search-price{
+    float: left;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    line-height: 5;
+  }
+  .responsive-search .search-price::after{
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;
+    border: 1px solid gray;
+    right: 0;
+    top: 0;
+  }
+  .responsive-search .search-option{
+    float: right;
+    position: relative;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    line-height: 5;
+  }
+  .search-price-filed,.search-option-filed{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+    transform: translateX(-100%);
+    z-index: 3000;
+    background-color: white;
+    display: block;
+  }
+  .search-price-filed header span,.search-option-filed header span{
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+    line-height: 1;
+    display: table;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .search-price-filed header, .search-option-filed header{
+    border-bottom: 1px solid gray;
+  }
+  .search-price-filed ul , .search-option-filed ul {
+    padding: 20px;
+  }
+  .search-price-filed ul li, .search-option-filed ul li {
+    padding: 15px 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .search-price-filed ul li:hover, .search-option-filed ul li:hover {
+    background-color: #fff4c1;
+  }
+  .search-price-filed ul li.selected, .search-option-filed ul li.selected {
+    background-color: #fff4c1;
+  }
+  .search-price-filed h4, .search-option-filed h4{
+    padding: 20px;
+    text-align: center;
+  }
+  .search-price-filed.active,.search-option-filed.active{
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+    transform: translateX(0);
+  }
+}
