@@ -5,6 +5,25 @@
  	background: #fff;
 	border-radius: 0 !important;
 }
+.icon-addon.addon-md .glyphicon, .icon-addon .glyphicon{
+	position: absolute;
+  z-index: 2;
+  left: 10px;
+  font-size: 14px;
+  width: 20px;
+  margin-left: -2.5px;
+  text-align: center;
+  padding: 10px 0;
+  top: 1px;
+}
+.icon-addon.addon-md .form-control, .icon-addon .form-control{
+	padding-left: 30px;
+}
+.navbar-search{
+  width: 20%;
+  float: left;
+	margin-left: 35px;
+}
 .dropdown-hover{
 	float: left;
 	position: relative;
@@ -206,6 +225,14 @@ ul.menu li ul{
 	#menu-desktop{
 		display: none;
 	}
+	.navbar-header{
+		float: left;
+		line-height: 40px !important;
+	}
+	
+	.navbar-search{
+		width: 50%;
+	}
 	.nav-responsive.toggle{
 		-webkit-transform: translateX(0);
 	   -moz-transform: translateX(0);
@@ -236,4 +263,7 @@ ul.menu li ul{
 }
 .overlay.active{
 	display: block;
+}
+@media (max-width: 479px){
+	
 }

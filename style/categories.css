@@ -3,8 +3,8 @@
   padding-bottom: 50px;
   background-color: white;
 }
-.group-book{
-  margin-top: 50px;
+#group-search{
+  margin-bottom: 50px;
 }
 .responsive-search{
   display: none;
@@ -13,8 +13,9 @@
 .search-option-filed,.search-price-filed{
   display: none;
 }
+
 @media (max-width: 767px){
-  ..group-seach{
+  #group-seach{
     display: none;
   }
   .responsive-search{
