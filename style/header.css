@@ -214,12 +214,6 @@ li a.btn-shopping-cart ~ .dropdown-cart,li a.btn-loggin ~ .dropdown-login{
 	.content-right{
 		display: none;
 	}
-	.navbar{
-		height: 60px;
-	}
-	.navbar.navbar-fixed-top{
-		height: 60px;
-	}
 	
 	.sidebar{
 		z-index: 1000;

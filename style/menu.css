@@ -227,6 +227,8 @@ ul.menu li ul{
 	}
 	.navbar-header{
 		float: left;
+	}
+	.navbar-brand{
 		line-height: 40px !important;
 	}
 	
@@ -253,7 +255,7 @@ ul.menu li ul{
 }
 .overlay{
 	position: fixed;
-	z-index: 1020;
+	z-index: 1040;
 	background-color: rgba(0,0,0,0.5);
 	top: 0;
 	left: 0;
@@ -265,5 +267,15 @@ ul.menu li ul{
 	display: block;
 }
 @media (max-width: 479px){
-	
+	.navbar-header{
+		float: none;
+	}
+	.navbar-search{
+		float: none;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.input-group{
+		display: block;
+	}
 }
