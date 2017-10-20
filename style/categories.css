@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 767px){
-  #group-seach{
+  #group-search{
     display: none;
   }
   .responsive-search{

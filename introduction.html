@@ -4,26 +4,27 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Homepage</title>
+	<meta charset="utf-8">
 	<!-- Latest compiled and minified CSS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
-  <script src="https://use.fontawesome.com/9c1074407f.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
+	<script src="https://use.fontawesome.com/9c1074407f.js"></script>
 	<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
-  <link rel="stylesheet" href="style/header.css">
-  <link rel="stylesheet" href="style/login.css">
-  <link rel="stylesheet" href="style/book.css">
-  <link rel="stylesheet" href="style/responsive-nav.css">
- 
- <link rel="stylesheet" href="style/menu.css">
- <link rel="stylesheet" href="style/footer.css">
+	<script src="javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
+	<link rel="stylesheet" href="style/header.css">
+	<link rel="stylesheet" href="style/login.css">
+	<link rel="stylesheet" href="style/book.css">
+ 	<script src="javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
+ 	<link rel="stylesheet" href="style/responsive-nav.css">
+	<link rel="stylesheet" href="style/menu.css">
+	<link rel="stylesheet" href="style/footer.css">
+	<link rel="stylesheet" type="text/css" href="style/introduction.css">
 </head>
 <body>
 	<!--Alert-->
@@ -247,59 +248,135 @@
 				
 			</ul>
 		</div>
-		<div class="slide-home">
-			<section class="">
-				<div class="owl-carousel owl-theme"  id="slideshow-home">
-					<div class="book-advance book-1" style="background-image: url(images/home/slider2.jpg);">
-						<div class="container">
-							<div class="row">
-								<div class="description">
-									<span class="title">NEW SESSION</span>
-									<span class="sub-title">BOOK 40% OFF</span>
-									<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
-									<a href class="btn btn-buy">BUY NOW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="book-advance book-2" style="background-image: url(images/home/slider3.jpg);" >
-						<div class="container">
-							<div class="row">
-								<div class="description" style="float:left; left:30px;">
-									<span class="title">NEW SESSION</span>
-									<span class="sub-title">BOOK 40% OFF</span>
-									<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
-									<a href class="btn btn-buy">BUY NOW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="book-advance book-3" style="background-image: url(images/home/slider4.jpg);">
-						<div class="container">
-							<div class="row">
-								<div class="description" style="float:left; left:30px;">
-									<span class="title">NEW SESSION</span>
-									<span class="sub-title">BOOK 40% OFF</span>
-									<span class="des"> Best book ready only for you. Take your time and choose your perfect book!</span>
-									<a href class="btn btn-buy">BUY NOW</a>
-								</div>
-							</div>
-						</div>
-					</div>
+	</div>
+	<nav class="nav-responsive" id="nav-responsive">
+		<div class="nav-main">
+			<div class="user-tab">
+				<span style='left: 100px;top: 10px;color: white;position: absolute;'> Name User </span>
+				<div class="img-name">
+					<img alt="images" src="images/khong-gia-dinh.jpg" class="img-circle">
 				</div>
-			</section>
+				<ul>
+					<li>
+						<a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
+					</li>
+					<li>
+						<a href="#">Sign up</a>
+					</li>
+				</ul>
+			</div>
+			<div class="responsive-tab">
+				<ul class="overflow-nav">
+					<li class="menu-link"><a href="cart.html">Your cart <i class="fa fa-shopping-cart"></i>  <span class="badge">10</span></a></li>
+					<li class="menu-link menu-link-main">
+							<a href="categories.html">Home</a>						
+					</li>
+					<li class="menu-link menu-link-main">
+							<a href="categories.html">Categories</a>						
+					</li>
+					<li class="menu-link menu-link-main">
+							<a href="categories.html">About us</a>						
+					</li>
+					<li class="menu-link">
+							<a href="#">Sign Out</a>						
+					</li>
+				</ul>
+			</div>
 		</div>
+		<div class="nav-sub">
+			<div class="responsive-tab-sub" style="visibility: hidden;">
+				<ul class="overflow-nav-sub">
+					<header id="home">
+						<h4>Home</h4>
+					</header>
+					<li class="menu-link">
+						<a href="#">HTML</a>
+					</li>
+					<li class="menu-link">
+						<a href="#"> CSS</a>
+					</li>
+					<li class="menu-link">
+						<a href="#"> JAVASCRIPT</a>
+					</li>
+				</ul>
+			</div>
+			<div class="responsive-tab-sub" style="visibility: hidden;">
+				<ul class="overflow-nav-sub">
+					<header id="categories">
+						<h4>Categories</h4>
+					</header>
+					<li class="menu-link">
+						<a>Technology</a>
+					</li>
+					<li class="menu-link">
+						<a> Health & Fitness </a>
+					</li>
+					<li class="menu-link">
+						<a> History</a>
+					</li>
+				</ul>
+			</div>
+			<div class="responsive-tab-sub" style="visibility: hidden;">
+				<ul class="overflow-nav-sub">
+					<header id="aboutus">
+						<h4>About us</h4>
+					</header>
+					<li class="menu-link">
+							<a href="#facebook">FACEBOOK <i class="fa fa-facebook-square"></i></a>					
+					</li>
+					<li class="menu-link">
+						<a href="#Twitter">TWITTER  <i class="fa fa-twitter-square"></i></a>					
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="wrapper">
+		<div class="container" id="container-detail">
+			<div class="col-md-6 col-xs-12" id="image-book">
+				<img src="images/detail/img-detail.png" alt="images" class="media-object" id="img-resize">
+			</div>
+			<div class="col-md-6 col-xs-12" id="detail-book">
+				<div class="row" id="detail-1">
+					<h3>Book "Kheo an noi se co duoc thien ha"</h3>
+					<h3>Authors: Google</h3>
+					<h3>Price: 200$</h3>
+					<h3>Price sale: 175$</h3>
+					<h3>Star
+				<a href="#" class="glyphicon glyphicon-star-empty" id="star1"></a>
+				<a href="#" class="glyphicon glyphicon-star-empty" id="star2"></a>
+				<a href="#" class="glyphicon glyphicon-star-empty" id="star3"></a>
+				<a href="#" class="glyphicon glyphicon-star-empty" id="star4"></a>
+				<a href="#" class="glyphicon glyphicon-star-empty" id="star5"></a>
+				</h3>
+				</div>
+				<a href="#" class="money">51.000 ₫</a>Đã có VAT
+				<pre> 
+Tiết kiệm: 20% (13.000 ₫)
+Giá thị trường: 64.000 ₫
+				</pre>
+				<pre> 
+Bạn muốn nhận hàng trước 10h sáng hôm nay 19/10?
+Đặt hàng trong 7 giờ 40 phút tới và chọn giao hàng 2h ở bước thanh toán
+				</pre>
+				<a href="#"><h3>Xem chi tiết</h3></a><br>
+				<a href="#" class="btn btn-danger" id="btn-dathang"><p class="color-i"><i class="fa fa-shopping-cart"></i> Đặt hàng ngay</p></a><br>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
 		<div class="container">
 		
 			<div class="row topweekend">
 				<div class="col-md-12">
-					<h1 class="title">Top Book weekend</h1>
+					<h1 class="title">Top View</h1>
 		      <div class="owl-carousel owl-theme"  id="topweekend">
 		      	<!-- <div class="carousel-inner"> -->
 		          <div class="item">
 	            	<div class="book-list">
-		        	  	<a href="introduction.html">
-		            		<img alt="images" src="images/img301.u3059.d20170616.t102644.74862.jpg" >
+		        	  	<a href="#">
+		            		<img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" >
 		            		<div class="icon-self">
 		            			<span class="badge badge-deal">22
 		            			</span>
@@ -593,135 +670,102 @@
 		      </div>
 				</div>
 			</div>
-			<div class="row topseller">
-				<div class="col-md-12">
-					<h1 class="title">Top best sellers</h1>
-		      <div class="owl-carousel owl-theme" id="topseller">
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/totto-chan_2.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/hanh_trinh_ve_phuong_dong_2.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/img894.u3059.d20170616.t102330.519090.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/kheo-an-noi-se-co-duoc-thien-ha.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/nxbtrestoryfull_02052014_030554_1.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/lamchugiaotiepdethanhcong_bia1.u5430.d20170928.t112148.560679.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/nxbtre_full_21052016_100557-u547-d20161223-t153654-559899.u3059.d20170616.t102445.279969.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/nxbtrestoryfull_02052014_030554_1.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            	<a href="#1"><img alt="images" src="images/toi-tai-gioi.jpg" ></a>
-	          </div>
-		      </div>
-				</div>
-			</div>
 		</div>
 	</div>
-	<nav class="nav-responsive" id="nav-responsive">
-		<div class="nav-main">
-			<div class="user-tab">
-				<span style='left: 100px;top: 10px;color: white;position: absolute;'> Name User </span>
-				<div class="img-name">
-					<img alt="images" src="images/khong-gia-dinh.jpg" class="img-circle">
-				</div>
-				<ul>
-					<li>
-						<a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
-					</li>
-					<li>
-						<a href="#">Sign up</a>
-					</li>
-				</ul>
-			</div>
-			<div class="responsive-tab">
-				<ul class="overflow-nav">
-					<li class="menu-link"><a href="cart.html">Your cart <i class="fa fa-shopping-cart"></i>  <span class="badge">10</span></a></li>
-					<li class="menu-link menu-link-main">
-							<a href="categories.html">Home</a>						
-					</li>
-					<li class="menu-link menu-link-main">
-							<a href="categories.html">Categories</a>						
-					</li>
-					<li class="menu-link menu-link-main">
-							<a href="categories.html">About us</a>						
-					</li>
-					<li class="menu-link">
-							<a href="#">Sign Out</a>						
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="nav-sub">
-			<div class="responsive-tab-sub" style="visibility: hidden;">
-				<ul class="overflow-nav-sub">
-					<header id="home">
-						<h4>Home</h4>
-					</header>
-					<li class="menu-link">
-						<a href="#">HTML</a>
-					</li>
-					<li class="menu-link">
-						<a href="#"> CSS</a>
-					</li>
-					<li class="menu-link">
-						<a href="#"> JAVASCRIPT</a>
-					</li>
-				</ul>
-			</div>
-			<div class="responsive-tab-sub" style="visibility: hidden;">
-				<ul class="overflow-nav-sub">
-					<header id="categories">
-						<h4>Categories</h4>
-					</header>
-					<li class="menu-link">
-						<a>Technology</a>
-					</li>
-					<li class="menu-link">
-						<a> Health & Fitness </a>
-					</li>
-					<li class="menu-link">
-						<a> History</a>
-					</li>
-				</ul>
-			</div>
-			<div class="responsive-tab-sub" style="visibility: hidden;">
-				<ul class="overflow-nav-sub">
-					<header id="aboutus">
-						<h4>About us</h4>
-					</header>
-					<li class="menu-link">
-							<a href="#facebook">FACEBOOK <i class="fa fa-facebook-square"></i></a>					
-					</li>
-					<li class="menu-link">
-						<a href="#Twitter">TWITTER  <i class="fa fa-twitter-square"></i></a>					
-					</li>
-					
-				</ul>
-			</div>
-		</div>
-	</nav>
-
+	<div class="wrapper" id="comment-wrapper">
+	  <main class="hoc container clear"> 
+	    <!-- main body -->
+	    <div class="content"> 
+	      <div id="comments">
+	        <h2 class="comments-name">Comments</h2>
+	        <ul>
+	          <li>
+	            <article>
+	              <header>
+	                <figure class="avatar"><a href="#" class="glyphicon glyphicon-user"></a></figure>
+	                <address>
+	                	<img src="http://graph.facebook.com/100004764192420/picture" alt=""><a href="#" class="">Nguyễn Tường Vi</a>
+	                </address>
+	                <time datetime="2017-10-06T08:15+00:00">Friday, 6<sup>th</sup> October 2017 @08:15:00</time>
+	              </header>
+	              <div class="comcont">
+	                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+	              </div>
+	            </article>
+	          </li>
+	          <li>
+	            <article>
+	              <header>
+	                <figure class="avatar"><a href="#" class="glyphicon glyphicon-user"></a></figure>
+	                <address>
+	                	 <img src="http://graph.facebook.com/100002953237059/picture" alt=""><a href="#">Nguyễn Anh Việt</a> 
+	                </address>
+	                <time datetime="2017-10-06T08:15+00:00">Friday, 6<sup>th</sup> October 2017 @08:15:00</time>
+	              </header>
+	              <div class="comcont">
+	                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+	              </div>
+	            </article>
+	          </li>
+	          <li>
+	            <article>
+	              <header>
+	                <figure class="avatar"><a href="#" class="glyphicon glyphicon-user"></a></figure>
+	                <address>
+	                	 <img src="http://graph.facebook.com/100015349683870/picture" alt=""><a href="#">Nguyễn Khương Duy</a>
+	                </address>
+	                <time datetime="2017-10-06T08:15+00:00">Friday, 6<sup>th</sup> October 2017 @08:15:00</time>
+	              </header>
+	              <div class="comcont">
+	                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+	              </div>
+	            </article>
+	          </li>
+	        </ul>
+	        <h2 class="write-comment">Write A Comment</h2>
+	        <form action="#" method="post" id="form-comment">
+	        	<div class="row">
+		          <div class="col-md-4 col-xs-12">
+		            <div class="group">      
+				      <input type="text" required>
+				      <span class="highlight"></span>
+				      <span class="bar"></span>
+				      <label>Name</label>
+				    </div>
+		          </div>
+		          <div class="col-md-4 col-xs-12">
+		            <div class="group">      
+				      <input type="email" required>
+				      <span class="highlight"></span>
+				      <span class="bar"></span>
+				      <label>Email</label>
+				    </div>
+		          </div>
+		          <div class="col-md-4 col-xs-12">
+		            <div class="group">      
+				      <input type="url" required>
+				      <span class="highlight"></span>
+				      <span class="bar"></span>
+				      <label>Website</label>
+				    </div>
+		          </div>
+	          	</div>
+	          	<div class="row" id="row-text">
+		            <textarea placeholder="This is an awesome comment box" rows="10" name="comment[text]" id="comment_text" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+	          	</div>
+	          	<div>
+		            <input type="submit" name="submit" value="Submit Form" class="btn btn-warning">
+		            &nbsp;
+		            <input type="reset" name="reset" value="Reset Form" class="btn btn-warning">
+	          	</div>
+	        </form>
+	      </div>
+	      <!-- ################################################################################################ -->
+	    </div>
+	    <!-- / main body -->
+	    <div class="clear"></div>
+	  </main>
+	</div>
 	<a href="#" class="overlay"></a>
 	<div class="footer-page">
 		<div class="container">

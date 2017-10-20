@@ -16,16 +16,255 @@
   <script src="javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="javascripts/categories.js" type="text/javascript" charset="utf-8" async defer></script>
-	
+	<script src="javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
   <link rel="stylesheet" href="style/header.css">
   <link rel="stylesheet" href="style/login.css">
   <link rel="stylesheet" href="style/book.css">
- 
+ <link rel="stylesheet" href="style/responsive-nav.css">
  <link rel="stylesheet" href="style/menu.css">
  <link rel="stylesheet" href="style/categories.css">
  <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
+    <div class="wrapper">
+        <!-- header start -->
+            <nav class="navbar navbar-static-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle">
+                    <div class="icon-bar"></div>
+                    <div class="icon-bar"></div>
+                    <div class="icon-bar"></div>                        
+                  </button>
+                  <a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i> BKBOOK</a>
+                </div>
+                    <div class="navbar-search">
+                        <div class="input-group input-group1">
+                            <div class="form-group form-group1"><div class="icon-addon addon-md addon-md1">
+                                <input type="text" name="username" id="email" class="form-control form-control1" placeholder="Search book"><label class="glyphicon glyphicon-search" for="search" rel="tooltip" title="search"></label></div></div></div>
+                    </div>
+                <div class="navbar-right" id="myNavbar">
+                    <div class="sidebar">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a class="btn btn-shopping-cart" href="cart.html"><i class="fa fa-shopping-cart"></i> Your cart  <span class="label label-default">2</span> </a>
+                            <div class="dropdown-cart">
+                                        <ul class="dropdown-cart-hover">
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                            </li>
+                            <li>
+                                <a class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                                <div class="dropdown-login">
+                                    <ul class="dropdown-login-hover">
+                                        <li>
+                                            <a href="#">Your Information</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Your Information</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Change password</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Log Out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
+            </nav>
+        <!-- header end -->
+        <div class="container" id ="menu-desktop">
+            <ul class="menu">
+                <li class="dropdown-hover">
+                    <a href="index.html">Home</a>
+                    <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-hover mega-dropdown-menu">
+                    <a href="categories.html">Categories</a>
+                    <ul>
+                        <div class="mega-menu container">
+                            <div class="row">
+                                <div class="col-sm-2 col-xs-4">
+                                    <div class="menu-list">
+                                        <h5>Categories</h5>
+                                        <a href="#">Technology</a>
+                                        <a href="#">Fiction</a>
+                                        <a href="#"> Health & Fitness</a>
+                                        <a href="#"> History</a>
+                                        <a href="#"> Mystery</a>
+                                        <a href="#">Politics & Current Affairs</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-4">
+                                    <div class="menu-list">
+                                        <h5>Categories</h5>
+                                        <a href="#">Technology</a>
+                                        <a href="#">Fiction</a>
+                                        <a href="#"> Health & Fitness</a>
+                                        <a href="#"> History</a>
+                                        <a href="#"> Mystery</a>
+                                        <a href="#">Politics & Current Affairs</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-4">
+                                    <div class="menu-list">
+                                        <h5>Categories</h5>
+                                        <a href="#">Technology</a>
+                                        <a href="#">Fiction</a>
+                                        <a href="#"> Health & Fitness</a>
+                                        <a href="#"> History</a>
+                                        <a href="#"> Mystery</a>
+                                        <a href="#">Politics & Current Affairs</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 style="text-align: center;">You should read</h3>
+                                    <div class="book-img-menu">
+                            <a href="#">
+                                <img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+                                <p>Dac Nhan Tam</p>
+                            </a>
+                        </div>
+                        <div class="book-img-menu">
+                            <a href="#">
+                                <img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+                                <p>Dac Nhan Tam</p>
+                                
+                            </a>
+                        </div>
+                        <div class="book-img-menu">
+                            <a href="#">
+                                <img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+                                <p>Dac Nhan Tam</p>
+                                
+                            </a>
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="dropdown-hover">
+                    <a href="#">Contact</a>
+                    <ul>
+                        <li>
+                            <a href="#">Facebook <i class="fa fa-facebook-square" style="font-size: 30px"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"> Twitter <i class="fa fa-twitter-square" style="font-size: 30px"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-hover">
+                        <a href="#">Introduction</a>
+                    <ul>
+                        <li>
+                            <a href="#">Facebook <i class="fa fa-facebook-square" style="font-size: 30px"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"> Twitter <i class="fa fa-twitter-square" style="font-size: 30px"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="Tabs-presentation-slider">
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <nav class="nav-responsive" id="nav-responsive">
+        <div class="nav-main">
+            <div class="user-tab">
+                <span style='left: 100px;top: 10px;color: white;position: absolute;'> Name User </span>
+                <div class="img-name">
+                    <img alt="images" src="images/khong-gia-dinh.jpg" class="img-circle">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="responsive-tab">
+                <ul class="overflow-nav">
+                    <li class="menu-link"><a href="cart.html">Your cart <i class="fa fa-shopping-cart"></i>  <span class="badge">10</span></a></li>
+                    <li class="menu-link menu-link-main">
+                            <a href="categories.html">Home</a>                      
+                    </li>
+                    <li class="menu-link menu-link-main">
+                            <a href="categories.html">Categories</a>                        
+                    </li>
+                    <li class="menu-link menu-link-main">
+                            <a href="categories.html">About us</a>                      
+                    </li>
+                    <li class="menu-link">
+                            <a href="#">Sign Out</a>                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-sub">
+            <div class="responsive-tab-sub" style="visibility: hidden;">
+                <ul class="overflow-nav-sub">
+                    <header id="home">
+                        <h4>Home</h4>
+                    </header>
+                    <li class="menu-link">
+                        <a href="#">HTML</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="#"> CSS</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="#"> JAVASCRIPT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="responsive-tab-sub" style="visibility: hidden;">
+                <ul class="overflow-nav-sub">
+                    <header id="categories">
+                        <h4>Categories</h4>
+                    </header>
+                    <li class="menu-link">
+                        <a>Technology</a>
+                    </li>
+                    <li class="menu-link">
+                        <a> Health & Fitness </a>
+                    </li>
+                    <li class="menu-link">
+                        <a> History</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="responsive-tab-sub" style="visibility: hidden;">
+                <ul class="overflow-nav-sub">
+                    <header id="aboutus">
+                        <h4>About us</h4>
+                    </header>
+                    <li class="menu-link">
+                            <a href="#facebook">FACEBOOK <i class="fa fa-facebook-square"></i></a>                  
+                    </li>
+                    <li class="menu-link">
+                        <a href="#Twitter">TWITTER  <i class="fa fa-twitter-square"></i></a>                    
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
 	<div class="container categories">
 		<div class="row" id="group-search">
 			<div class="col-md-3 col-sm-4">
@@ -217,6 +456,55 @@
 			<li class="responsive-option"> <span> DESC </span> </li>
 		</ul>
 	</div>
+    <div class="footer-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <ul>
+                        <h3>About Us</h3>
+                        <li>
+                            <a href="#"> <i class="fa fa-facebook">acebook</i></a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-twitter">Twitter</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <ul>
+                        <h3> What's hot</h3>
+                        <li><a href="#">Popular Textbooks</a></li>
+                        <li><a href="#">Top Rented Textbooks</a></li>
+                        <li><a href="#">Rent Textbooks</a></li>
+                        <li><a href="#">All Categories</a></li>
+                        <li><a href="#">Top Searches</a></li>
+                        <li><a href="#">Customer Quotes</a></li>
+                        <li><a href="#">Coupons</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <ul>
+                        <h3> Support </h3>
+                        <li>
+                            <a href="#">How to buy book</a>
+                        </li>
+                        <li>
+                            <a href="#">Manager your cart</a>
+                        </li>
+                        <li>
+                            <a href="#">Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <a href="#"><i class="fa fa-book"> </i> BKBOOK</a>
+                    <a href="#">Nguyen Anh Viet</a>
+                    <a href="#">Nguyen Tuong Vi</a>
+                    <a href="#">Nguyen Khuong Duy</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
