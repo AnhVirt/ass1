@@ -1,0 +1,219 @@
+address a{
+	margin-left: 15px;
+	text-decoration: none;
+	text-decoration-line: none;
+}
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li{margin:0 0 10px 0; padding:15px;}
+#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
+#comments address{font-weight:bold; font-size: 20px;}
+#comments time{font-size:smaller;}
+#comments .comcont{display:block; margin:0; padding:0;}
+#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
+#comments h2{
+	font-size: 20px;
+	color: #4B515D;
+}
+#comments form{display:block; width:100%;}
+#comments textarea{overflow:auto;}
+#container-detail{
+	background: white !important;
+	box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.1) !important;
+}
+#image-book{
+}
+#detail-book #detail-1{
+	margin-top: 15px;
+	box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.1);
+}
+#detail-book a{
+	text-decoration: none;
+}
+.money{
+	color: red;
+	font-size: 30px;
+}
+#detail-book .color-i{
+  margin: 0 auto;
+	font-size: 20px;
+	color: white;
+}
+#detail-book #star1,#detail-book #star2,#detail-book #star3,#detail-book #star4{
+	color: yellow;
+}
+article{
+	padding: 15px 15px;
+	box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.1);
+}
+article:hover{
+	border: 2px groove rgba(255,0,0,0.1);
+	opacity: 1.2;
+}
+#btn-dathang{
+  margin-bottom: 10px;
+}
+#detail-1{
+  padding: 15px 15px;
+}
+@media (max-width: 767px){
+  body{max-width: 767px;}
+	address a{
+		font-size: 14px;
+		margin-left: 5px !important;
+	}
+	#img-resize{
+	}
+	#comments form{
+		max-width: 767px;
+	}
+}
+@media (max-width: 991px){
+  #container-detail{
+    margin-top: 60px;
+  }
+	address a{
+		font-size: 14px;
+		margin-left: 5px !important;
+	}
+	#img-resize{
+		max-width:400px;
+    margin-left: -70px;
+	}
+	#detail-1{
+    margin: 0 0 10px;
+		font-size: 14px;
+	}
+	#comments form{
+		max-width: 991px;
+	}
+}
+.group { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+h2.comments-name{
+ 	padding: 15px 15px;
+ }
+h2.write-comment{
+	padding: 15px 15px;
+	margin-bottom: 20px;
+}
+#form-comment{
+	padding: 15px 15px;
+}
+.group input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.group input:focus 		{ outline:none; }
+
+.group label{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.group input:focus ~ label, .group  input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+.group  input:focus ~ .bar:before,.group  input:focus ~ .bar:after {
+  width:50%;
+}
+
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100%; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+.group  input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+#row-text{
+	padding: 15px 15px;
+}
+textarea {
+	padding: 15px 15px;
+	 -webkit-appearance: textarea;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    flex-direction: column;
+    resize: auto;
+    cursor: auto;
+    word-wrap: break-word;
+    overflow: auto;
+  width: 100%;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  transition: background-color 0.2s ease 0s;
+}
+
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}

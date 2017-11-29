@@ -77,6 +77,19 @@ CREATE TABLE images(
 	ON DELETE SET NULL ON UPDATE CASCADE
 );
 
+CREATE TABLE comments(
+	id Integer PRIMARY AUTO_INCREMENT,
+	book_id Integer NOT NULL,
+	user_id Integer NOT NULL,
+	description TEXT NOT NULL,
+	FOREIGN KEY(book_id) REFERENCES books(id)
+	ON DELETE SET NULL ON UPDATE CASCADE
+	FOREIGN KEY(book_id) REFERENCES books(id)
+	ON DELETE SET NULL ON UPDATE CASCADE
+
+	)
+
+
 ALTER TABLE book_carts
 ADD CHECK (Amount > 0);
 
@@ -89,15 +102,15 @@ CREATE TRIGGER `increase_buy_book` AFTER UPDATE ON `carts`
  FOR EACH ROW BEGIN
 DECLARE amt INT;
 DECLARE id_book INT;
-    IF NEW.action = 'success' THEN
-        SELECT book_carts.amount,book_carts.book_id INTO amt,id_book
-        FROM book_carts  INNER JOIN books 
-        ON book_carts.book_id = books.id AND NEW.id = book_carts.cart_id;
-        UPDATE books
-        SET books.num_buy = books.num_buy + amt,
-          books.amount = books.amount - amt
-        WHERE books.id = id_book;
-    END IF;
+  IF NEW.action = 'success' THEN
+    SELECT book_carts.amount,book_carts.book_id INTO amt,id_book
+    FROM book_carts  INNER JOIN books 
+    ON book_carts.book_id = books.id AND NEW.id = book_carts.cart_id;
+    UPDATE books
+    SET books.num_buy = books.num_buy + amt,
+      books.amount = books.amount - amt
+    WHERE books.id = id_book;
+  END IF;
 END
 
 
