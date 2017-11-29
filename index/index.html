@@ -7,23 +7,23 @@
 	<!-- Latest compiled and minified CSS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
+	<link rel="stylesheet" href="/ass1/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="/ass1/node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
   <script src="https://use.fontawesome.com/9c1074407f.js"></script>
-	<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
-  <link rel="stylesheet" href="style/header.css">
-  <link rel="stylesheet" href="style/login.css">
-  <link rel="stylesheet" href="style/book.css">
-  <link rel="stylesheet" href="style/responsive-nav.css">
+	<script src="/ass1/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="/ass1/javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/ass1/javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/ass1/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+  <link rel="stylesheet" href="/ass1/style/header.css">
+  <link rel="stylesheet" href="/ass1/style/login.css">
+  <link rel="stylesheet" href="/ass1/style/book.css">
+  <link rel="stylesheet" href="/ass1/style/responsive-nav.css">
  
- <link rel="stylesheet" href="style/menu.css">
- <link rel="stylesheet" href="style/footer.css">
+ <link rel="stylesheet" href="/ass1/style/menu.css">
+ <link rel="stylesheet" href="/ass1/style/footer.css">
 </head>
 <body>
 	<!--Alert-->
@@ -44,19 +44,19 @@
 				  			<li class="Tabs-presentation-slider" role="presentation"></li>
 					  	</ul>
 					  	<div class="login active" id="login-form">
-						    <form>
+						    <form class="form-horizontal" action="/ass1/users/login.php" method = "POST">
 						      <div class="input-container">
-						        <input type="email" id="email" required="required" />
+						        <input type="email" id="email" name="email" required="required" />
 						        <label for="user_name">Username</label>
 						        <div class="bar"></div>
 						      </div>
 						      <div class="input-container">
-						        <input type="password" id="password" required="required" />
+						        <input type="password" id="password" name="password" required="required" />
 						        <label for="password">Password</label>
 						        <div class="bar"></div>
 						      </div>
 						      <div class="button-container">
-						        <button><span>Log In</span></button>
+						        <button type="submit"><span>Log In</span></button>
 						      </div>
 						      <div class="footer"><a href="#">Forgot your password?</a></div>
 						    </form>
@@ -197,20 +197,20 @@
 									<h3 style="text-align: center;">You should read</h3>
 									<div class="book-img-menu">
 			        	  	<a href="#">
-			            		<img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+			            		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
 			            		<p>Dac Nhan Tam</p>
 		            		</a>
 		            	</div>
 		            	<div class="book-img-menu">
 			        	  	<a href="#">
-			            		<img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+			            		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
 			            		<p>Dac Nhan Tam</p>
 			            		
 		            		</a>
 		            	</div>
 		            	<div class="book-img-menu">
 			        	  	<a href="#">
-			            		<img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+			            		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
 			            		<p>Dac Nhan Tam</p>
 			            		
 		            		</a>
@@ -250,7 +250,7 @@
 		<div class="slide-home">
 			<section class="">
 				<div class="owl-carousel owl-theme"  id="slideshow-home">
-					<div class="book-advance book-1" style="background-image: url(images/home/slider2.jpg);">
+					<div class="book-advance book-1" style="background-image: url(/ass1/images/home/slider2.jpg);">
 						<div class="container">
 							<div class="row">
 								<div class="description">
@@ -262,7 +262,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="book-advance book-2" style="background-image: url(images/home/slider3.jpg);" >
+					<div class="book-advance book-2" style="background-image: url(/ass1/images/home/slider3.jpg);" >
 						<div class="container">
 							<div class="row">
 								<div class="description" style="float:left; left:30px;">
@@ -274,7 +274,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="book-advance book-3" style="background-image: url(images/home/slider4.jpg);">
+					<div class="book-advance book-3" style="background-image: url(/ass1/images/home/slider4.jpg);">
 						<div class="container">
 							<div class="row">
 								<div class="description" style="float:left; left:30px;">
@@ -299,7 +299,7 @@
 		          <div class="item">
 	            	<div class="book-list">
 		        	  	<a href="#">
-		            		<img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" >
+		            		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
 		            		<div class="icon-self">
 		            			<span class="badge badge-deal">22
 		            			</span>
@@ -325,7 +325,7 @@
 		          </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/img894.u3059.d20170616.t102330.519090.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/img894.u3059.d20170616.t102330.519090.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -349,7 +349,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/kheo-an-noi-se-co-duoc-thien-ha.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/kheo-an-noi-se-co-duoc-thien-ha.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -373,7 +373,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/khi-hoi-tho-hoa-thinh-khong.u5464.d20170726.t170655.288851.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/khi-hoi-tho-hoa-thinh-khong.u5464.d20170726.t170655.288851.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -397,7 +397,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/khong-gia-dinh.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/khong-gia-dinh.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -421,7 +421,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -445,7 +445,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/bia-1---mac-ke-thien-ha.u5102.d20170323.t155756.324847.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/bia-1---mac-ke-thien-ha.u5102.d20170323.t155756.324847.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -469,7 +469,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/co-gai-den-tu-hom-qua_bia-moi_ban-thuong.u5131.d20170607.t100057.355539.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/co-gai-den-tu-hom-qua_bia-moi_ban-thuong.u5131.d20170607.t100057.355539.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -493,7 +493,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/giet-con-chim-nhai_2_2.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/giet-con-chim-nhai_2_2.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -517,7 +517,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/hanh_trinh_ve_phuong_dong_2.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/hanh_trinh_ve_phuong_dong_2.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -541,7 +541,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -565,7 +565,7 @@
 	            </div>
 		          <div class="item">
 	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="images/img117.u3059.d20170616.t100547.729023.jpg" >
+	            		<a href="#1"><img alt="images" src="/ass1/images/img117.u3059.d20170616.t100547.729023.jpg" >
 	            		<div class="content-book">
 		            			<p class="price-sale">50000 ₫ 
 		            				<span class="price-regular">60000 ₫</span>
@@ -598,40 +598,40 @@
 					<h1 class="title">Top best sellers</h1>
 		      <div class="owl-carousel owl-theme" id="topseller">
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/totto-chan_2.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/totto-chan_2.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/img592.u3059.d20170616.t101749.921069.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/hanh_trinh_ve_phuong_dong_2.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/hanh_trinh_ve_phuong_dong_2.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/img894.u3059.d20170616.t102330.519090.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/img894.u3059.d20170616.t102330.519090.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/kheo-an-noi-se-co-duoc-thien-ha.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/kheo-an-noi-se-co-duoc-thien-ha.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/nxbtrestoryfull_02052014_030554_1.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/nxbtrestoryfull_02052014_030554_1.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/lamchugiaotiepdethanhcong_bia1.u5430.d20170928.t112148.560679.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/lamchugiaotiepdethanhcong_bia1.u5430.d20170928.t112148.560679.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/nxbtre_full_21052016_100557-u547-d20161223-t153654-559899.u3059.d20170616.t102445.279969.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/nxbtre_full_21052016_100557-u547-d20161223-t153654-559899.u3059.d20170616.t102445.279969.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            <a href="#1"><img alt="images" src="images/nxbtrestoryfull_02052014_030554_1.jpg" ></a>
+	            <a href="#1"><img alt="images" src="/ass1/images/nxbtrestoryfull_02052014_030554_1.jpg" ></a>
 	          </div>
 	          <div class="item">
-	            	<a href="#1"><img alt="images" src="images/toi-tai-gioi.jpg" ></a>
+	            	<a href="#1"><img alt="images" src="/ass1/images/toi-tai-gioi.jpg" ></a>
 	          </div>
 		      </div>
 				</div>
@@ -643,7 +643,7 @@
 			<div class="user-tab">
 				<span style='left: 100px;top: 10px;color: white;position: absolute;'> Name User </span>
 				<div class="img-name">
-					<img alt="images" src="images/khong-gia-dinh.jpg" class="img-circle">
+					<img alt="images" src="/ass1/images/khong-gia-dinh.jpg" class="img-circle">
 				</div>
 				<ul>
 					<li>
@@ -675,7 +675,7 @@
 		<div class="nav-sub">
 			<div class="responsive-tab-sub" style="visibility: hidden;">
 				<ul class="overflow-nav-sub">
-					<header id="home">
+					<header id="home" class="color-header">
 						<h4>Home</h4>
 					</header>
 					<li class="menu-link">
@@ -691,7 +691,7 @@
 			</div>
 			<div class="responsive-tab-sub" style="visibility: hidden;">
 				<ul class="overflow-nav-sub">
-					<header id="categories">
+					<header id="categories" class="color-header">
 						<h4>Categories</h4>
 					</header>
 					<li class="menu-link">
@@ -707,7 +707,7 @@
 			</div>
 			<div class="responsive-tab-sub" style="visibility: hidden;">
 				<ul class="overflow-nav-sub">
-					<header id="aboutus">
+					<header id="aboutus" class="color-header">
 						<h4>About us</h4>
 					</header>
 					<li class="menu-link">
