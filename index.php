@@ -1,10 +1,10 @@
 <?php
-	require 'config/database_config.php';
-	require 'helper/session.php';
-	require 'helper/database.php';
-	require 'helper/view.php';
-	require 'helper/model.php';
-	require 'helper/routes.php';
-	require 'helper/controller.php';
+	require_once 'config/database_config.php';
+	require_once 'helper/session.php';
+	require_once 'helper/database.php';
+	require_once 'helper/view.php';
+	require_once 'helper/model.php';
+	require_once 'helper/routes.php';
+	require_once 'helper/controller.php';
 	$app = new Routes;
  ?>

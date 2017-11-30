@@ -1,6 +1,12 @@
 <?php 
 	class View{
+		public $user;
 		function __construct(){
+			if (Session::get("email",true))
+			{
+				$this->user = Controller::current_user();
+					
+			}
 		}
 
 		public function render($name)

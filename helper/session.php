@@ -1,8 +1,7 @@
 <?php 
 
 	class Session{
-
-			public static function init()
+		public static function init()
 		{
 			@session_start();
 		}
@@ -33,6 +32,7 @@
 			session_destroy();
 			header('Location: /',true,301);
 		}
+		
 
 
 	}

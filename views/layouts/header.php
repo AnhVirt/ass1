@@ -29,7 +29,7 @@
 
 												echo '<a class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>';
 											else
-												echo '<a class="btn btn-loggin" href="#" >xxxxxxx</a>';
+												echo '<a class="btn btn-loggin" href="#" >'.$this->user->first_name.'</a>';
 											 ?>
 				        		<div class="dropdown-login">
 				        			<ul class="dropdown-login-hover">

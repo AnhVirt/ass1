@@ -1,11 +1,9 @@
 <?php 
-	require 'model/User_model.php';
 	class Users extends Controller{
 		function __construct(){
 			parent::__construct();
-			
-
 		}
+
 		public function login(){
 			if($_SERVER["REQUEST_METHOD"] == 'POST')
 			{
@@ -14,16 +12,15 @@
 				
 					$password = md5($_POST["password"]);
 					$email =  $_POST["email"];
-					$query = "SELECT COUNT(*) FROM users WHERE password = '".$password."' AND email = '".$email."'";
+					
 					$user = new UserModel;
-					$result = $user->select($query);
+					$result = $user->select($email,$password);
 					if ($result == 1)
 					{
 						Session::set('email',$_POST["email"]);
 						header('Location: /',true,301);
 					}
-					// else header('Location: /',true,301);
-					echo $result;
+					else header('Location: /',true,301);
 				}
 				else
 				{
@@ -51,10 +48,9 @@
 					else
 					{
 						$user = new UserModel;
-						$password = md5($password );
-						$query = "INSERT INTO users(email,password,first_name,last_name) VALUES ('".$email."','".$password."','".$first_name."','".$last_name."')";
-						$result = $user->select($query);
-						if ($result)
+						$password = md5($password);
+						$result = $user->insert($email,$password,$first_name,$last_name);
+						if (!$result)
 						 echo("Error description: " . mysqli_error($user->db->get_db()));
 						else
 							header('Location: /',true,301);
