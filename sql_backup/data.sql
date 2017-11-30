@@ -17,6 +17,10 @@ CREATE TABLE users (
 	created_at Datetime  Default CURRENT_TIMESTAMP,
 	update_at Datetime 	Default CURRENT_TIMESTAMP
 );
+
+CREATE UNIQUE INDEX users
+ON users (email);
+
 CREATE TABLE categories(
 	id Integer PRIMARY KEY AUTO_INCREMENT,
 	name varchar(50) COLLATE utf8mb4_vietnamese_ci NOT NULL

@@ -6,24 +6,24 @@
 	<title>CATEGORIES</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/ass1/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-	<link rel="stylesheet" href="/ass1/node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
+	<link rel="stylesheet" href="/lib/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="/lib/node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
   <script src="https://use.fontawesome.com/9c1074407f.js"></script>
-	<script src="/ass1/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="/ass1/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="/ass1/javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="/ass1/javascripts/categories.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/lib/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="/lib/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="/lib/javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="/lib/javascripts/categories.js" type="text/javascript" charset="utf-8" async defer></script>
 	
-  <link rel="stylesheet" href="/ass1/style/header.css">
-  <link rel="stylesheet" href="/ass1/style/login.css">
-  <link rel="stylesheet" href="/ass1/style/book.css">
- <link rel="stylesheet" href="/ass1/style/responsive-nav.css">
- <link rel="stylesheet" href="/ass1/style/menu.css">
- <link rel="stylesheet" href="/ass1/style/categories.css">
- <link rel="stylesheet" href="/ass1/style/footer.css">
+  <link rel="stylesheet" href="/lib/style/header.css">
+  <link rel="stylesheet" href="/lib/style/login.css">
+  <link rel="stylesheet" href="/lib/style/book.css">
+ <link rel="stylesheet" href="/lib/style/responsive-nav.css">
+ <link rel="stylesheet" href="/lib/style/menu.css">
+ <link rel="stylesheet" href="/lib/style/categories.css">
+ <link rel="stylesheet" href="/lib/style/footer.css">
 </head>
 <body>
     <div class="wrapper">
@@ -36,7 +36,7 @@
                     <div class="icon-bar"></div>
                     <div class="icon-bar"></div>                        
                   </button>
-                  <a class="navbar-brand" href="/ass1/index/index.html"><i class="fa fa-book" aria-hidden="true"></i> BKBOOK</a>
+                  <a class="navbar-brand" href="/"><i class="fa fa-book" aria-hidden="true"></i> BKBOOK</a>
                 </div>
                     <div class="navbar-search">
                         <div class="input-group input-group1">
@@ -82,7 +82,7 @@
         <div class="container" id ="menu-desktop">
             <ul class="menu">
                 <li class="dropdown-hover">
-                    <a href="/ass1/index/index.html">Home</a>
+                    <a href="/">Home</a>
                     <ul>
                     <li><a href="#">HTML</a></li>
                     <li><a href="#">CSS</a></li>
@@ -90,7 +90,7 @@
                   </ul>
                 </li>
                 <li class="dropdown-hover mega-dropdown-menu">
-                    <a href="/ass1/category/categories.html">Categories</a>
+                    <a href="/categories">Categories</a>
                     <ul>
                         <div class="mega-menu container">
                             <div class="row">
@@ -286,7 +286,7 @@
 			<div class="col-md-3 col-sm-4 col-xs-6">
 				<div class="book-list">
     	  	<a href="#">
-        		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
+        		<img alt="images" src="/lib/images/img592.u3059.d20170616.t101749.921069.jpg" >
         		<div class="icon-self">
         			<span class="badge badge-deal">22
         			</span>
@@ -313,7 +313,7 @@
 			<div class="col-md-3 col-sm-4 col-xs-6">
 				<div class="book-list">
     	  	<a href="#">
-        		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
+        		<img alt="images" src="/lib/images/img592.u3059.d20170616.t101749.921069.jpg" >
         		<div class="icon-self">
         			<span class="badge badge-deal">22
         			</span>
@@ -340,7 +340,7 @@
 			<div class="col-md-3 col-sm-4 col-xs-6 ">
 				<div class="book-list">
     	  	<a href="#">
-        		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
+        		<img alt="images" src="/lib/images/img592.u3059.d20170616.t101749.921069.jpg" >
         		<div class="icon-self">
         			<span class="badge badge-deal">22
         			</span>
@@ -367,7 +367,7 @@
 			<div class="col-md-3 col-sm-4 col-xs-6 ">
 				<div class="book-list">
     	  	<a href="#">
-        		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
+        		<img alt="images" src="/lib/images/img592.u3059.d20170616.t101749.921069.jpg" >
         		<div class="icon-self">
         			<span class="badge badge-deal">22
         			</span>
@@ -394,7 +394,7 @@
 			<div class="col-md-3 col-sm-4 col-xs-6 ">
 				<div class="book-list">
     	  	<a href="#">
-        		<img alt="images" src="/ass1/images/img592.u3059.d20170616.t101749.921069.jpg" >
+        		<img alt="images" src="/lib/images/img592.u3059.d20170616.t101749.921069.jpg" >
         		<div class="icon-self">
         			<span class="badge badge-deal">22
         			</span>
