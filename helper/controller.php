@@ -5,6 +5,7 @@
 		 	require 'model/user_model.php';
 		 	require 'model/cart_model.php';
 		 	require 'model/book_model.php';
+		 	require 'model/book_cart_model.php';
 			$this->view = new View;
 		}
 		function error(){
@@ -30,7 +31,14 @@
 			else
 				return false;
 		}
-		
+		function top_weekend(){
+			$book = new BookModel;
+			return $book->top_weekend();
+		}
+		function top_seller(){
+			$book = new BookModel;
+			return $book->top_seller();
+		}
 
 
 

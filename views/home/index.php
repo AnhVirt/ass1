@@ -163,300 +163,40 @@
 					<h1 class="title">Top Book weekend</h1>
 		      <div class="owl-carousel owl-theme"  id="topweekend">
 		      	<!-- <div class="carousel-inner"> -->
-		          <div class="item">
-	            	<div class="book-list">
-		        	  	<a href="#">
-		            		<img alt="images" src="/lib/images/img592.u3059.d20170616.t101749.921069.jpg" >
-		            		<div class="icon-self">
-		            			<span class="badge badge-deal">22
-		            			</span>
-		            		</div>
-		            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div>
-	            		</a>
-		            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<a href="/collects/buy?id=52" type="button" class="btn btn-cart" data-remote = "true" data-method="POST"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</a>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-		            	</div>
-		          </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/img894.u3059.d20170616.t102330.519090.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	        					<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/kheo-an-noi-se-co-duoc-thien-ha.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	        					<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/khi-hoi-tho-hoa-thinh-khong.u5464.d20170726.t170655.288851.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/khong-gia-dinh.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/bia-1---mac-ke-thien-ha.u5102.d20170323.t155756.324847.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/co-gai-den-tu-hom-qua_bia-moi_ban-thuong.u5131.d20170607.t100057.355539.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/giet-con-chim-nhai_2_2.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/hanh_trinh_ve_phuong_dong_2.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            	<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		          <div class="item">
-	            	<div class="book-list">
-	            		<a href="#1"><img alt="images" src="/lib/images/img117.u3059.d20170616.t100547.729023.jpg" >
-	            		<div class="content-book">
-		            			<p class="price-sale">50000 ₫ 
-		            				<span class="price-regular">60000 ₫</span>
-		            			</p>
-		            			<p></p>
-		            		</div></a>
-	            		<div class="icon-self">
-	            			<span class="badge badge-deal">22</span>
-	            		</div>
-	            		<div class="box-btn">
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-		            				</button>
-		            			</div>
-		            		</div>
-	            	</div>
-	            </div>
-		        <!-- </div> -->
-		          <!-- <a class="left carousel-control" href="#topweekend" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-		        	<a class="right carousel-control" href="#topweekend" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+	      		<?php
+	      			while ($row = mysqli_fetch_object($this->top_weekend)){
+	      				echo '
+									<div class="item">
+			            	<div class="book-list">
+				        	  	<a href="#">
+				            		<img alt="images" src="'.$row->image_url.'" >
+				            		<div class="icon-self">
+				            			<span class="badge badge-deal">22
+				            			</span>
+				            		</div>
+				            		<div class="content-book">
+				            			<p class="price-sale">
+				            				 '.$row->name.'₫ 
+				            				<span class="price-regular">'.$row->price.' ₫</span>
+				            			</p>
+				            			<p></p>
+				            		</div>
+			            		</a>
+				            		<div class="box-btn">
+				            			<div class="btn-img">
+				            				<a href="/collects/buy?id='.$row->id.'" type="button" class="btn btn-cart" data-remote = "true" data-method="POST"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+				            				</a>
+				            			</div>
+				            			<div class="btn-img">
+				            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
+				            				</button>
+				            			</div>
+				            		</div>
+				            	</div>
+				          </div>
+	      			';
+	      			}
+	      		 ?>
 		      </div>
 				</div>
 			</div>
@@ -464,42 +204,40 @@
 				<div class="col-md-12">
 					<h1 class="title">Top best sellers</h1>
 		      <div class="owl-carousel owl-theme" id="topseller">
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/totto-chan_2.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/img592.u3059.d20170616.t101749.921069.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/hanh_trinh_ve_phuong_dong_2.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/harvard-bon-ruoi-sang-01.u5426.d20170829.t110503.114626.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/ba-chang-linh-ngu-lam.u5465.d20171004.t102622.786481.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/img894.u3059.d20170616.t102330.519090.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/kheo-an-noi-se-co-duoc-thien-ha.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/nxbtrestoryfull_02052014_030554_1.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/lamchugiaotiepdethanhcong_bia1.u5430.d20170928.t112148.560679.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/nxbtre_full_21052016_100557-u547-d20161223-t153654-559899.u3059.d20170616.t102445.279969.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            <a href="#1"><img alt="images" src="/lib/images/nxbtrestoryfull_02052014_030554_1.jpg" ></a>
-	          </div>
-	          <div class="item">
-	            	<a href="#1"><img alt="images" src="/lib/images/toi-tai-gioi.jpg" ></a>
-	          </div>
+	        	<?php
+	      			while ($row = mysqli_fetch_object($this->top_seller)){
+	      				echo '
+									<div class="item">
+			            	<div class="book-list">
+				        	  	<a href="#">
+				            		<img alt="images" src="'.$row->image_url.'" >
+				            		<div class="icon-self">
+				            			<span class="badge badge-deal">22
+				            			</span>
+				            		</div>
+				            		<div class="content-book">
+				            			<p class="price-sale">
+				            				 '.$row->name.'₫ 
+				            				<span class="price-regular">'.$row->price.' ₫</span>
+				            			</p>
+				            			<p></p>
+				            		</div>
+			            		</a>
+				            		<div class="box-btn">
+				            			<div class="btn-img">
+				            				<a href="/collects/buy?id='.$row->id.'" type="button" class="btn btn-cart" data-remote = "true" data-method="POST"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+				            				</a>
+				            			</div>
+				            			<div class="btn-img">
+				            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
+				            				</button>
+				            			</div>
+				            		</div>
+				            	</div>
+				          </div>
+	      			';
+	      			}
+	      		 ?>
 		      </div>
 				</div>
 			</div>

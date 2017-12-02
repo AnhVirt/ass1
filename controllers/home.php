@@ -5,7 +5,7 @@
 			
 		}
 		public function index($search = false){
-				$this->view->render( "home/index");
+				$this->view->render("home/index");
 		}
 	}
  ?>
