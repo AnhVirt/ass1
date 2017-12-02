@@ -39,6 +39,10 @@
 			$book = new BookModel;
 			return $book->top_seller();
 		}
+		function cart($user_id,$cart_id){
+			$cart = new BookCartModel;
+			return $cart->get_all($user_id,$cart_id);
+		}
 
 
 

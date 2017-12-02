@@ -11,8 +11,9 @@ ul{
 	padding: 0;
 	margin: 0;
 }
-.col-md-12{
-	background-color: white;
+.item-cart.col-xs-12{
+	background: white;
+	margin-bottom: 20px;
 }
 
 .navbar.navbar-static-top{
@@ -248,4 +249,12 @@ li div.btn-shopping-cart > .dropdown-cart,li div.btn-loggin > .dropdown-login{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 	}
+}
+@media (max-width: 479px){
+	.media-body{
+		display: block;
+		margin-left: 40px;
+	}
+
+
 }

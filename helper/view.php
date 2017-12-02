@@ -17,11 +17,18 @@
 			else
 			{
 				switch ($name) {
+
 					case 'home/index':
 						$this->top_weekend  = Controller::top_weekend();
 						$this->top_seller = Controller::top_seller();
 						break;
-					
+
+					case 'carts/checkout':
+						$this->pay_cart = Controller::cart($this->user->id,$this->cart->id);
+						break;
+					case 'books/search':
+						$this->search = $message;
+						break;
 					default:
 						# code...
 						break;

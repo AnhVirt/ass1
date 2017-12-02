@@ -10,17 +10,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
   <script src="https://use.fontawesome.com/9c1074407f.js"></script>
-	<script src="/lib/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="/lib/javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/lib/javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/lib/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/lib/javascripts/cart.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/lib/javascripts/ajax-rails.js" type="text/javascript" charset="utf-8" async defer></script>
+	
+  <script src="/lib/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  
+
   <link rel="stylesheet" href="/lib/style/header.css">
+  <link rel="stylesheet" href="/lib/style/categories.css">
+  <link rel="stylesheet" href="/lib/style/introduction.css">
+  <link rel="stylesheet" href="/lib/style/cart.css">
+
   <link rel="stylesheet" href="/lib/style/login.css">
   <link rel="stylesheet" href="/lib/style/book.css">
   <link rel="stylesheet" href="/lib/style/responsive-nav.css">
  
  <link rel="stylesheet" href="/lib/style/menu.css">
  <link rel="stylesheet" href="/lib/style/footer.css">
+
+  <script src="/lib/javascripts/categories.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/lib/javascripts/book.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/lib/javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/lib/javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/lib/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/lib/javascripts/cart.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/lib/javascripts/ajax-rails.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>

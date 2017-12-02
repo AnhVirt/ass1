@@ -14,12 +14,21 @@
 						exit;
 					}
 					$controller = new $url[0];
-					
-					if (isset($url[1])){
-						$controller->{$url[1]}();
+					if(isset($_GET["q"])){
+
+						if (isset($url[1])){
+							$controller->{$url[1]}($_GET["q"]);
+						}
+						else
+							$controller->{'index'}($_GET["q"]);	
 					}
-					else
-						$controller->{'index'}();	
+					else{
+						if (isset($url[1])){
+							$controller->{$url[1]}();
+						}
+						else
+							$controller->{'index'}();
+					}
 				
 			}
 			else

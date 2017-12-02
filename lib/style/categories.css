@@ -3,6 +3,10 @@
   padding-bottom: 50px;
   background-color: white;
 }
+.wrapper{
+ 
+  min-height: 700px;
+}
 #group-search{
   margin-bottom: 50px;
 }

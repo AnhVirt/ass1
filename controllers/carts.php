@@ -8,7 +8,10 @@
 
 		}
 		function checkout(){
-			$this->view->render('cart/checkout');
+			$user = Controller::current_user();
+			$carts = Controller::current_cart($user);
+			$this->pay_cart = Controller::cart($user->id,$carts->id);
+			$this->view->render('carts/checkout');
 		}
 
 
