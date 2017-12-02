@@ -1,0 +1,4 @@
+﻿id;first_name;last_name;email;phone;password;admin;birth_day;address;avatar_url;token_reset;created_at;update_at
+1;Nguyễn;Anh Việt;songvui000@gmail.com;123456789;123456789;1;2017-12-02;Dĩ An-Bình Dương;/lib/images/avatar/default/avatar.png;NULL;2017-12-02 10:17:00;2017-12-02 10:17:00
+2;Nguyễn;Tường Vi;ntvi.cse@gmail.com;123456789;123456789;1;2017-12-02;Dĩ An-Bình Dương;/lib/images/avatar/default/avatar.png;NULL;2017-12-02 10:17:00;2017-12-02 10:17:00
+3;Nguyễn ;Vi;vinguyen@gmail.com;123456789;123456789;0;2017-12-02;Dĩ An-Bình Dương;/lib/images/avatar/default/avatar.png;NULL;2017-12-02 10:21:00;2017-12-02 10:21:00
