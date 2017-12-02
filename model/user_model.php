@@ -11,8 +11,8 @@
 			}
 			else
 			{
-				$query = "SELECT COUNT(*) FROM users WHERE password = '".$password."' AND email = '".$email."'";
-				return mysqli_num_rows(mysqli_query($this->db->get_db(),$query));
+				$query = "SELECT COUNT(*) as count,id FROM users WHERE password = '".$password."' AND email = '".$email."'";
+				return mysqli_fetch_object(mysqli_query($this->db->get_db(),$query));
 			}
 		}
 		public function insert($email,$password,$first_name,$last_name){

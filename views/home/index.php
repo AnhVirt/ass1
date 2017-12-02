@@ -180,8 +180,8 @@
 	            		</a>
 		            		<div class="box-btn">
 		            			<div class="btn-img">
-		            				<button type="button" class="btn btn-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>
-		            				</button>
+		            				<a href="/collects/buy?id=52" type="button" class="btn btn-cart" data-remote = "true" data-method="POST"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+		            				</a>
 		            			</div>
 		            			<div class="btn-img">
 		            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>

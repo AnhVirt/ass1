@@ -2,6 +2,7 @@
 	class Users extends Controller{
 		function __construct(){
 			parent::__construct();
+			
 		}
 
 		public function login(){
@@ -12,19 +13,27 @@
 				
 					$password = md5($_POST["password"]);
 					$email =  $_POST["email"];
-					
+
 					$user = new UserModel;
-					$result = $user->select($email,$password);
-					if ($result == 1)
+					$user = $user->select($email,$password);
+
+					if ($user->count == 1)
 					{
 						Session::set('email',$_POST["email"]);
+						$cart = new CartModel;
+						$cart = $cart->insert($user->id);
+
 						header('Location: /',true,301);
 					}
-					else header('Location: /',true,301);
+					else
+					{
+						header('Location: /',true,301);
+						echo 'asdasdad';
+					} 
 				}
 				else
 				{
-					// header('Location: /',true,301);	
+					header('Location: /',true,301);	
 				}
 			}
 			else
@@ -47,10 +56,10 @@
 						echo 'password-cofirmation not match';
 					else
 					{
-						$user = new UserModel;
 						$password = md5($password);
-						$result = $user->insert($email,$password,$first_name,$last_name);
-						if (!$result)
+						$user = new UserModel;
+						$user = $user->insert($email,$password,$first_name,$last_name);
+						if (!$user)
 						 echo("Error description: " . mysqli_error($user->db->get_db()));
 						else
 							header('Location: /',true,301);
@@ -64,6 +73,8 @@
 		}
 		public function logout(){
 			Session::destroy();
+			$cart =  new CartModel;
+			$cart = $cart->delete_empty_cart(Controller::current_user()->id);
 		}
 		public function show(){
 			$email = Session::get(["email"]);

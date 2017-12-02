@@ -14,6 +14,8 @@
   <script src="/lib/javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/lib/javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/lib/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/lib/javascripts/cart.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/lib/javascripts/ajax-rails.js" type="text/javascript" charset="utf-8" async defer></script>
   <link rel="stylesheet" href="/lib/style/header.css">
   <link rel="stylesheet" href="/lib/style/login.css">
   <link rel="stylesheet" href="/lib/style/book.css">

@@ -167,28 +167,27 @@ ul{
 .owl-carousel:hover .owl-nav .disabled{
 	opacity: 0.5;
 }
-li:hover a.btn-shopping-cart ~ .dropdown-cart,li:hover a.btn-loggin ~ .dropdown-login{
-	opacity: 1;
+li:hover div.btn-shopping-cart > .dropdown-cart,li:hover div.btn-loggin > .dropdown-login{
 	display: block;
 	min-height:  100px;
+	position: absolute;
 	background-color: #ffffc8;
 	margin-top: 20px;
 }
 
-li a.btn-shopping-cart ~ .dropdown-cart,li a.btn-loggin ~ .dropdown-login{
-	opacity: 0;
+
+li div.btn-shopping-cart > .dropdown-cart,li div.btn-loggin > .dropdown-login{
 	display: none;
 	min-width: 200px;
 	padding: 10px 20px;
-	position: absolute;
 	transform: translateX(-50%);
   left: 50%;
 }
-.dropdown-cart-hoverbefore,.dropdown-login-hover{
+.dropdown-cart-hover,.dropdown-login-hover{
 	padding: 10px;
 	font-size: 15px;
 }
-.dropdown-cart-hoverbefore li,.dropdown-login-hover li {
+.dropdown-cart-hover li,.dropdown-login-hover li {
 	margin: 10px 0;
 }
 .dropdown-cart-hover::before,.dropdown-login-hover::before{

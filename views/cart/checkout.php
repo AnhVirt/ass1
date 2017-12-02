@@ -1,86 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Yourcart</title>
-	<!-- Latest compiled and minified CSS -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
-  	<script src="https://use.fontawesome.com/9c1074407f.js"></script>
-	<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-	<!--js and css local-->
-  	<script src="javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="javascripts/cart.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
-  	<link rel="stylesheet" href="style/header.css">
-  	<link rel="stylesheet" href="style/responsive-nav.css">
-  	<link rel="stylesheet" href="style/menu.css">
-	 <link rel="stylesheet" href="style/footer.css">
-	<link rel="stylesheet" href="style/cart.css">
-</head>
+	<?php 
+	require 'views/layouts/css_js.php' ?>
 <body>
 
 	<!-- Modal -->
-	
+	<?php 
+		require 'views/layouts/modal_login.php';
+
+	 ?>
 	<!-- Modal end-->
 	<div class="wrapper">
 		<!-- header start -->
-			<nav class="navbar navbar-static-top">
-			  <div class="container">
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle">
-			        <div class="icon-bar"></div>
-			        <div class="icon-bar"></div>
-			        <div class="icon-bar"></div>                        
-			      </button>
-			      <a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i> BKBOOK</a>
-			    </div>
-					<div class="navbar-search">
-						<div class="input-group input-group1">
-							<div class="form-group form-group1"><div class="icon-addon addon-md addon-md1">
-								<input type="text" name="username" id="email" class="form-control form-control1" placeholder="Search book"><label class="glyphicon glyphicon-search" for="search" rel="tooltip" title="search"></label></div></div></div>
-					</div>
-			    <div class="navbar-right" id="myNavbar">
-			    	<div class="sidebar">
-			      	<ul class="nav navbar-nav navbar-right">
-				      		<li><a class="btn btn-shopping-cart" href="cart.html"><i class="fa fa-shopping-cart"></i> Your cart  <span class="label label-default">2</span> </a>
-				      		<div class="dropdown-cart">
-										<ul class="dropdown-cart-hover">
-											<li></li>
-										</ul>
-									</div>
-				      		</li>
-			        		<li>
-			        			<a class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-				        		<div class="dropdown-login">
-				        			<ul class="dropdown-login-hover">
-					        			<li>
-					        				<a href="#">Your Information</a>
-					        			</li>
-					        			<li>
-					        				<a href="#">Your Information</a>
-					        			</li>
-					        			<li>
-					        				<a href="#">Change password</a>
+			<?php 
+		require 'views/layouts/header.php';
 
-					        			</li>
-					        			<li>
-					        				<a href="#">Log Out</a>
-					        			</li>
-					        		</ul>
-				        		</div>
-			        		</li>
-			      	</ul>
-			    	</div>
-			    </div>
-			  </div>
-			</nav>
+	 ?>
 		<!-- header end -->
 		<div class="container" id ="menu-desktop">
 			<ul class="menu">
@@ -93,7 +28,7 @@
 				  </ul>
 				</li>
 				<li class="dropdown-hover mega-dropdown-menu">
-					<a href="categories.html">Categories</a>
+					<a href="/categories">Categories</a>
 					<ul>
 						<div class="mega-menu container">
 							<div class="row">
@@ -421,138 +356,6 @@
 	    	</div>
 		</div>
 	</div>
-	<nav class="nav-responsive" id="nav-responsive">
-		<div class="nav-main">
-			<div class="user-tab">
-				<span style='left: 100px;top: 10px;color: white;position: absolute;'> Name User </span>
-				<div class="img-name">
-					<img alt="images" src="images/khong-gia-dinh.jpg" class="img-circle">
-				</div>
-				<ul>
-					<li>
-						<a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
-					</li>
-					<li>
-						<a href="#">Sign up</a>
-					</li>
-				</ul>
-			</div>
-			<div class="responsive-tab">
-				<ul class="overflow-nav">
-					<li class="menu-link"><a href="cart.html">Your cart <i class="fa fa-shopping-cart"></i>  <span class="badge">10</span></a></li>
-					<li class="menu-link menu-link-main">
-							<a href="categories.html">Home</a>						
-					</li>
-					<li class="menu-link menu-link-main">
-							<a href="categories.html">Categories</a>						
-					</li>
-					<li class="menu-link menu-link-main">
-							<a href="categories.html">About us</a>						
-					</li>
-					<li class="menu-link">
-							<a href="#">Sign Out</a>						
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="nav-sub">
-			<div class="responsive-tab-sub" style="visibility: hidden;">
-				<ul class="overflow-nav-sub">
-					<header id="home">
-						<h4>Home</h4>
-					</header>
-					<li class="menu-link">
-						<a href="#">HTML</a>
-					</li>
-					<li class="menu-link">
-						<a href="#"> CSS</a>
-					</li>
-					<li class="menu-link">
-						<a href="#"> JAVASCRIPT</a>
-					</li>
-				</ul>
-			</div>
-			<div class="responsive-tab-sub" style="visibility: hidden;">
-				<ul class="overflow-nav-sub">
-					<header id="categories">
-						<h4>Categories</h4>
-					</header>
-					<li class="menu-link">
-						<a>Technology</a>
-					</li>
-					<li class="menu-link">
-						<a> Health & Fitness </a>
-					</li>
-					<li class="menu-link">
-						<a> History</a>
-					</li>
-				</ul>
-			</div>
-			<div class="responsive-tab-sub" style="visibility: hidden;">
-				<ul class="overflow-nav-sub">
-					<header id="aboutus">
-						<h4>About us</h4>
-					</header>
-					<li class="menu-link">
-							<a href="#facebook">FACEBOOK <i class="fa fa-facebook-square"></i></a>					
-					</li>
-					<li class="menu-link">
-						<a href="#Twitter">TWITTER  <i class="fa fa-twitter-square"></i></a>					
-					</li>
-					
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<a href="#" class="overlay"></a>
-	<div class="footer-page" id="footer-page">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<ul>
-						<h3>About Us</h3>
-						<li>
-							<a href="#"><i class="fa fa-facebook"></i>acebook </a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-twitter"></i>Twitter</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<ul>
-						<h3> What's hot</h3>
-						<li><a href="#">Popular Textbooks</a></li>
-						<li><a href="#">Top Rented Textbooks</a></li>
-						<li><a href="#">Rent Textbooks</a></li>
-						<li><a href="#">All Categories</a></li>
-						<li><a href="#">Top Searches</a></li>
-						<li><a href="#">Customer Quotes</a></li>
-						<li><a href="#">Coupons</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<ul>
-						<h3> Support </h3>
-						<li>
-							<a href="#">How to buy book</a>
-						</li>
-						<li>
-							<a href="#">Manager your cart</a>
-						</li>
-						<li>
-							<a href="#">Policy</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a href="#"><i class="fa fa-book"> </i> BKBOOK</a>
-					<a href="#">Nguyen Anh Viet</a>
-					<a href="#">Nguyen Tuong Vi</a>
-					<a href="#">Nguyen Khuong Duy</a>
-				</div>
-			</div>
-		</div>
-	</div>
+
 </body>
 </html>

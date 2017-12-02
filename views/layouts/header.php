@@ -16,22 +16,31 @@
 			    <div class="navbar-right" id="myNavbar">
 			    	<div class="sidebar">
 			      	<ul class="nav navbar-nav navbar-right">
-				      		<li><a class="btn btn-shopping-cart" href="cart.html"><i class="fa fa-shopping-cart"></i> Your cart  <span class="label label-default">2</span> </a>
-				      		<div class="dropdown-cart">
-										<ul class="dropdown-cart-hover">
-											<li></li>
-										</ul>
-									</div>
+				      		<li>
+				      			<div class="btn btn-shopping-cart" href="#">
+				      				<i class="fa fa-shopping-cart"></i> 
+				      				Your cart  <span class="label label-default">
+
+				      				<?php
+				      					if (isset($_SESSION["email"]))
+				      				 		echo $this->cart->total;
+				      				 		else 
+				      				 		echo 0; ?></span> 
+					      		<div class="dropdown-cart">
+											<ul class="dropdown-cart-hover">
+												<li></li>
+											</ul>
+										</div>
+				      		</div>
 				      		</li>
 			        		<li>
 			        			<?php 
 											if (!isset($_SESSION["email"]))
 
-												echo '<a class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>';
+												echo '<div class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</div>';
 											else
-												echo '<a class="btn btn-loggin" href="#" >'.$this->user->first_name.'</a>';
-											 ?>
-				        		<div class="dropdown-login">
+												echo '<div class="btn btn-loggin" href="#" >'.$this->user->first_name.'
+													<div class="dropdown-login">
 				        			<ul class="dropdown-login-hover">
 					        			<li>
 					        				<a href="#">Your Information</a>
@@ -48,10 +57,14 @@
 					        			</li>
 					        		</ul>
 				        		</div>
+
+											</div>';
+											 ?>
+				        		
 			        		</li>
 			      	</ul>
 			    	</div>
 			    </div>
 			  </div>
-			</nav>
+</nav>
 

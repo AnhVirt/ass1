@@ -5,23 +5,25 @@
 			if (Session::get("email",true))
 			{
 				$this->user = Controller::current_user();
-					
+				$this->cart = Controller::current_cart($this->user);
 			}
 		}
+		public function render($name,$message = NULL){
+			if ($_SERVER['REQUEST_METHOD'] == 'POST')
+			{
 
-		public function render($name)
-		{
-			require 'views/layouts/modal_login.php';
-			require 'views/'.$name.'.php';
-			require 'views/layouts/footer.php';
-			require 'views/layouts/nav_responsive.php';
+				include_once 'views/'.$name.'.php';
+			}
+			else
+			{
+				include_once 'views/layouts/modal_login.php';
+				include_once 'views/'.$name.'.php';
+				include_once 'views/layouts/footer.php';
+				include_once 'views/layouts/nav_responsive.php';
+
+			}
+
+			
 		}
-
-
-
 	}
-
-
-
-
  ?>

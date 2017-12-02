@@ -3,6 +3,8 @@
 	class Errors extends Controller{
 		function __construct(){
 			parent::__construct();
+			if (!Session::get('email',true))
+				Session::destroy();
 		}
 		public function error_404(){
 				require 'views/layouts/header.php';
