@@ -25,29 +25,34 @@
 	  	<div class="sidebar">
 	    	<ul class="nav navbar-nav navbar-right">
     			<li>
-	      			<div class="btn btn-shopping-cart" href="#">
-	      				<i class="fa fa-shopping-cart"></i> 
-	      				Your cart  <span class="label label-default">
+    				<a href="/carts/checkout" style="padding: 0px;outline: none;background: none;">
+      			<span class="btn btn-shopping-cart" style="font-weight: bold" >
+      				
+      				<i class="fa fa-shopping-cart"></i> 
+	      				Your cart  <span class="label label-default" id ="amount-cart">
 
 	      				<?php
 	      					if (isset($_SESSION["email"]))
 	      				 		echo $this->cart->total;
 	      				 		else 
-	      				 		echo 0; ?></span> 
+	      				 		echo 0; ?>
+	      				 			
+	      				 		</span> 
 		      		<div class="dropdown-cart">
 								<ul class="dropdown-cart-hover">
 									<li></li>
 								</ul>
 							</div>
-	      		</div>
+				 		</span>
+    				 	</a>
     			</li>
 	      		<li>
 	      			<?php 
 								if (!isset($_SESSION["email"]))
 
-									echo '<div class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</div>';
+									echo '<span class="btn btn-loggin" style="font-weight: bold" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</span>';
 								else
-									echo '<div class="btn btn-loggin" href="#" >'.$this->user->first_name.'
+									echo '<span class="btn btn-loggin" style="font-weight: bold"	>'.$this->user->first_name.'
 										<div class="dropdown-login">
 	        			<ul class="dropdown-login-hover">
 		        			<li>
@@ -66,7 +71,7 @@
 		        		</ul>
 	        		</div>
 
-								</div>';
+								</span>';
 								 ?>
 	        		
 	      		</li>

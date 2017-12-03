@@ -21,7 +21,11 @@
 					{
 						Session::set('email',$_POST["email"]);
 						$cart = new CartModel;
-						$cart = $cart->insert($user->id);
+						$_cart = $cart->select($user->id);
+						if($_cart != NULL &&  $_cart->action == 'waiting')
+							true;
+						else
+							$cart->insert($user->id);
 
 						header('Location: /',true,301);
 					}
@@ -56,7 +60,6 @@
 						echo 'password-cofirmation not match';
 					else
 					{
-						$password = md5($password);
 						$user = new UserModel;
 						$user = $user->insert($email,$password,$first_name,$last_name);
 						if (!$user)
@@ -73,8 +76,6 @@
 		}
 		public function logout(){
 			Session::destroy();
-			$cart =  new CartModel;
-			$cart = $cart->delete_empty_cart(Controller::current_user()->id);
 		}
 		public function show(){
 			$email = Session::get(["email"]);

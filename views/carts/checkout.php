@@ -122,43 +122,66 @@
 			</div>
 			<div class="row">
 				<div class="col-md-8">
-					<div class="row">
+					<div class="row" id ='cart-container'>
 							<?php 
+							$total = 0;
 									if (isset($this->pay_cart)){
 										if(mysqli_num_rows($this->pay_cart))
 										{
-											while($row = mysqli_fetch_object($this->pay_cart))
-											echo '
-											<div class="item-cart col-xs-12">
-				        				<div class="media">
-					        				<div class="media-left">
-									   				<a href="#">
-									     				<img class="media-object" id="image-cart" src="'.$row->image_url.'" alt="images">
-									   				</a>
-							   					</div>
-									  			<div class="media-body">
-												    <h4 class="media-heading ">Name: </h4>
-												    <h4 class="media-heading ">Author: </h4>
-												    <h4 class="media-heading ">Price: </h4>
-												    <a href="/carts/cancel_book?id='.$row->id.'" data-remote="true" data-method="POST" class="btn btn-danger" style="position: absolute; top: 0; right:0">X</a>
+											while($row = mysqli_fetch_object($this->pay_cart)){
+												$total = $total + intval($row->total)* intval($row->sale);
+												echo '
+												<div class="item-cart col-xs-12" id="book-id-'.$row->id.'">
+					        				<div class="media">
+						        				<div class="media-left">
+										   				<a href="#">
+										     				<img class="media-object" id="image-cart" src="'.$row->image_url.'" alt="images">
+										   				</a>
+								   					</div>
+										  			<div class="media-body">
+													    <p class="media-heading">Book:    '.$row->name.' </p>
+													    <p class="media-heading">Author: '.$row->author.' </p>
+													    <p class="media-heading">Price: '.$row->sale.'₫	</p>
+													    <p class="media-heading"> Amount: '.$row->total.'</p>
+													    <a href="/carts/cancel_book?q='.$row->id.'" data-remote="true" data-method="POST" style="position: absolute; top: -20px; right:0;font-size:50px">&times</a>
+														</div>
 													</div>
-												</div>
-				  						</div>
-											';
+					  						</div>
+												';
+											}
 
 									}
 									else
-										echo 'YOU HAVE NOTHING IN YOUR CART';
+										echo '<h2>YOU HAVE NOTHING IN YOUR CART</h2>';
 							
 
 								}
 								else
-									echo 'YOU HAVE NOTHING IN YOUR CART';
+									echo '<h2>YOU HAVE NOTHING IN YOUR CART</h2>';
 										
 
 							 ?>
         			
 					</div>
+				</div>
+				<div class="col-md-4" id="cart-payment">
+					<?php 
+						if (isset($this->pay_cart)){
+							if(mysqli_num_rows($this->pay_cart)){
+								echo '<div class="cart-div">';
+								echo '<div class="cart-total">';
+								echo '<div class="header-cart">';
+								echo '<p class="pay-p-cart" >TOTAL:<span style = "float: right" id ="total-cart">'.$total.'₫</span></p>';
+								echo '<p class="pay-p-cart"  >COUNT AVT:<span style = "float: right" id ="avt-cart">'.($total*0.1).'₫</span></p>';
+								echo '<p >PAY:<span style = "float: right" id="pay-cart">'.($total*1.1).'₫</span></p>';
+								echo '</div>';
+								echo '</div>';
+								echo '<a href="/carts/payment" data-remote="true" data-method="POST" class="btn btn-block" style="float:right">PAYMENT</a>';
+								echo '</div>';
+							}
+						}
+					 ?>
+					
 				</div>
 			</div>
 		</div>

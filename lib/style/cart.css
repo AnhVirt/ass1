@@ -13,6 +13,10 @@
 }
 #bander:hover{
 }
+p.media-heading {
+	font-size: 18px;
+	font-weight: bold;
+}
 #banner a,#banner h4{
 	padding: 5px 5px;
 }
@@ -21,8 +25,28 @@
     background-color: white;
     padding: 15px 15px;
 }
+.cart-div{
+	background: #fff;
+}
+.btn.btn-block{
+	width: 100%;
+	background: #ff424e;
+	color: #fff;
+}
+.pay-p-cart{
+	border-bottom: 1px solid gray;
+	margin-bottom: 20px;
+}
+.header-cart{
+	min-height: 100px;
+
+}
+.cart-total{
+	background: #fff;
+  padding: 20px;
+}
 .item-cart{
-	height: 210px;
+	min-height: 210px;
 	padding: 10px 0px;
 	position: relative;
 }
@@ -141,7 +165,7 @@ h1.title{
 		display: none;
 	}
 	.media-heading{
-		font-size: 1rem;
+		font-size: 14px;
 	}
 	.col-md-4 {
 	}

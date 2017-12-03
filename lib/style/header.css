@@ -168,7 +168,7 @@ ul{
 .owl-carousel:hover .owl-nav .disabled{
 	opacity: 0.5;
 }
-li:hover div.btn-shopping-cart > .dropdown-cart,li:hover div.btn-loggin > .dropdown-login{
+li:hover .btn-shopping-cart > .dropdown-cart,li:hover .btn-loggin > .dropdown-login{
 	display: block;
 	min-height:  100px;
 	position: absolute;
@@ -177,7 +177,7 @@ li:hover div.btn-shopping-cart > .dropdown-cart,li:hover div.btn-loggin > .dropd
 }
 
 
-li div.btn-shopping-cart > .dropdown-cart,li div.btn-loggin > .dropdown-login{
+li .btn-shopping-cart > .dropdown-cart,li .btn-loggin > .dropdown-login{
 	display: none;
 	min-width: 200px;
 	padding: 10px 20px;

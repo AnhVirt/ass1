@@ -17,7 +17,10 @@
 					$this->user = Controller::current_user();
 					$this->cart = Controller::current_cart($this->user);
 					$result = $book->buy($_GET['id'],$this->cart->id) ;
+					$cart = new CartModel;
+					$amount = $cart->select($this->user->id)->total;
 					$this->view->render('collects/buy',$result);
+					echo '$("#amount-cart").text("'.$amount.'")';
 				}
 				else
 					echo 'alert("book is not found")';

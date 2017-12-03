@@ -168,28 +168,38 @@
 	      				echo '
 									<div class="item">
 			            	<div class="book-list">
-				        	  	<a href="#">
+				        	  	<a href="/books/show?q='.$row->id.'">
 				            		<img alt="images" src="'.$row->image_url.'" >
 				            		<div class="icon-self">
 				            			<span class="badge badge-deal">22
 				            			</span>
 				            		</div>
 				            		<div class="content-book">
+				            			<p class="name-book">'.$row->name.'</p> 
 				            			<p class="price-sale">
-				            				 '.$row->name.'₫ 
+				            				 '.$row->sale.'₫ 
 				            				<span class="price-regular">'.$row->price.' ₫</span>
 				            			</p>
 				            			<p></p>
 				            		</div>
 			            		</a>
 				            		<div class="box-btn">
+				            			
+				            			<div class="box-rate">
+				            				<p >Rate :<span style="color:yellow">';
+
+
+				            for( $i = intval($row->star);$i > 0;$i--){
+				            			echo '<i class="fa fa-star" aria-hidden="true"></i>';
+				            }
+				            		
+				            echo '
+				            					</span>
+				            				</p>
+				            			</div>
 				            			<div class="btn-img">
 				            				<a href="/collects/buy?id='.$row->id.'" type="button" class="btn btn-cart" data-remote = "true" data-method="POST"><i class="fa fa-cart-plus" aria-hidden="true"></i>
 				            				</a>
-				            			</div>
-				            			<div class="btn-img">
-				            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-				            				</button>
 				            			</div>
 				            		</div>
 				            	</div>
@@ -209,28 +219,38 @@
 	      				echo '
 									<div class="item">
 			            	<div class="book-list">
-				        	  	<a href="#">
+				        	  	<a href="/books/show?q='.$row->id.'">
 				            		<img alt="images" src="'.$row->image_url.'" >
 				            		<div class="icon-self">
-				            			<span class="badge badge-deal">22
+				            			<span class="badge badge-deal">HOT
 				            			</span>
 				            		</div>
 				            		<div class="content-book">
-				            			<p class="price-sale">
-				            				 '.$row->name.'₫ 
+				            			<p class="name-book">'.$row->name.'</p>
+				            			<p>Price: <span class="price-sale">
+				            				 '.$row->sale.'₫ 
 				            				<span class="price-regular">'.$row->price.' ₫</span>
-				            			</p>
+				            			</span><p>
 				            			<p></p>
 				            		</div>
 			            		</a>
 				            		<div class="box-btn">
+				            			
+				            			<div class="box-rate">
+				            				<p >Rate :<span style="color:yellow">';
+
+
+				            for( $i = intval($row->star);$i > 0;$i--){
+				            			echo '<i class="fa fa-star" aria-hidden="true"></i>';
+				            }
+				            		
+				            echo '
+				            					</span>
+				            				</p>
+				            			</div>
 				            			<div class="btn-img">
 				            				<a href="/collects/buy?id='.$row->id.'" type="button" class="btn btn-cart" data-remote = "true" data-method="POST"><i class="fa fa-cart-plus" aria-hidden="true"></i>
 				            				</a>
-				            			</div>
-				            			<div class="btn-img">
-				            				<button type="button" class="btn btn-heart"><i class="fa fa-heart" aria-hidden="true"></i>
-				            				</button>
 				            			</div>
 				            		</div>
 				            	</div>
