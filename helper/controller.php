@@ -51,6 +51,10 @@
 			$user=new UserModel;
 			return $user->updatepass($id,$password);
 		}
+		function getMycart($current_id){
+			$user= new UserModel;
+			return $user->getCart($current_id);
+		}
 
 	}
 

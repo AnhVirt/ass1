@@ -32,6 +32,9 @@
 					case 'books/show':
 						$this->top_weekend  = Controller::top_weekend();
 						$this->book= $message;
+					case 'information/user':
+						$this->mycart=Controller::getMycart($this->user->id);
+						break;
 					default:
 						# code...
 						break;

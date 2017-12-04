@@ -4,9 +4,7 @@
 <html>
 <head>
 	<title></title>
-	<?php
-
-	?>
+	<script src="/lib/javascripts/information-user.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -134,13 +132,13 @@
 	          			<br>
 	          			<div class="input-group" >
 	          				<span class="input-group-addon" id="basic-addon2"><i id="editfname" class="glyphicon glyphicon-wrench"></i></span>
-						  	<input type="text" class="form-control" placeholder="FirstName" aria-describedby="sizing-addon1" name="firstname_us" id="firstname_us" value="<?= $this->user->first_name?>">
+						  	<input type="text" class="form-control" aria-describedby="sizing-addon1" name="firstname_us" id="firstname_us" value="<?= $this->user->first_name?>">
 						</div>
 						<hr>
 	          			<h4>LastName</h4><br>
 	          			<div class="input-group" >
 	          				<span class="input-group-addon" id="basic-addon2"><i id="editlname" class="glyphicon glyphicon-wrench"></i></span>
-						  	<input type="text" class="form-control" placeholder="Last Name" aria-describedby="sizing-addon1" name="lastname_us" id="lastname_us" value="<?= $this->user->last_name?>">
+						  	<input type="text" class="form-control" aria-describedby="sizing-addon1" name="lastname_us" id="lastname_us" value="<?= $this->user->last_name?>">
 						</div>
 						<hr>
 	          			<h4>Email</h4><br>
@@ -188,9 +186,45 @@
 	          		</form>
 				</div>
 				<div class="tab-pane" id="mycart">
-	          		<form method="POST" action="user.php">
-	          			
-	          		</form>
+	          		<?php
+	          			echo '<div class="table-responsive">';
+	          		 	$result=$this->mycart;
+          				if($this->mycart->num_rows>0){
+	          				 $r =  $result->fetch_assoc();
+							 $table="<table class='table'><tr>";
+							 if($r["Action"]=="success"){
+							 		$firstLine="<tr class='success'>";
+							 	}
+							 	if($r["Action"]=="pending"){
+							 		$firstLine="<tr class='warning'>";
+							 	}
+							 	if($r["Action"]=="waiting"){
+							 		$firstLine="<tr class='danger'>";
+							 	}
+							 foreach ($r as $k => $v){
+							   $table .="<td>".$k. "</td>";
+							   $firstLine .="<td>".$v."</td>";
+							 }
+							$table.="</tr>".$firstLine."</tr>";
+							 while($r = $result->fetch_assoc()){
+							 	if($r["Action"]=="success"){
+							 		$table.="<tr class='success'>";
+							 	}
+							 	if($r["Action"]=="pending"){
+							 		$table.="<tr class='warning'>";
+							 	}
+							 	if($r["Action"]=="waiting"){
+							 		$table.="<tr class='danger'>";
+							 	}
+							   foreach($r as $k => $v)
+							     $table.="<td>".$v."</td>";
+							   	$table.="</tr>";
+							 }
+							$table .="</table>";
+          				}
+          				echo $table;
+          				echo '</div>';
+	          		?>
 				</div>
 			</div>
   		</div>

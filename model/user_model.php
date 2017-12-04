@@ -53,6 +53,11 @@
 						WHERE id='".$id."'";
 			return mysqli_query($this->db->get_db(),$query);
 		}
+
+		public function getCart($current_id){
+			$query = "SELECT carts.id as IDCart,users.first_name as FirstName,users.last_name as LastName,carts.action as Action,carts.price_total as PriceTotal,carts.created_at as CreatedAt,carts.update_at as UpdateAt from carts JOIN users ON carts.user_id = users.id WHERE carts.user_id='".$current_id."'";
+			return mysqli_query($this->db->get_db(),$query);
+		}
 	}
 
  ?>

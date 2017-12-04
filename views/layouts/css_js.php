@@ -19,16 +19,11 @@
   <link rel="stylesheet" href="/lib/style/login.css">
   <link rel="stylesheet" href="/lib/style/book.css">
   <link rel="stylesheet" href="/lib/style/responsive-nav.css">
-<<<<<<< HEAD
  
  <link rel="stylesheet" href="/lib/style/menu.css">
  <link rel="stylesheet" href="/lib/style/footer.css">
  <link rel="stylesheet" type="text/css" href="/lib/style/information-user.css">
 
-=======
-  <link rel="stylesheet" href="/lib/style/menu.css">
-  <link rel="stylesheet" href="/lib/style/footer.css">
->>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
   <script src="/lib/javascripts/categories.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/lib/javascripts/book.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/lib/javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>
@@ -36,5 +31,4 @@
   <script src="/lib/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/lib/javascripts/cart.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/lib/javascripts/ajax-rails.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/lib/javascripts/information-user.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>

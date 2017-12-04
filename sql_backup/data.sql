@@ -28,6 +28,8 @@ CREATE TABLE categories(
 	name varchar(50) COLLATE utf8mb4_vietnamese_ci NOT NULL
 );
 
+
+
 CREATE TABLE books (
 	id Integer PRIMARY KEY AUTO_INCREMENT,
 	category_id Integer,
@@ -197,6 +199,47 @@ DELIMITER $$
 CREATE TRIGGER `before_create_image` BEFORE INSERT ON `images`
  FOR EACH ROW SET  NEW.image_url = CASE WHEN NEW.image_url IS NULL THEN 'https://www.shareicon.net/data/2017/05/09/885769_user_512x512.png' ELSE NEW.image_url END;
 	$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER `increase_cart` AFTER INSERT ON `book_carts`
+ FOR EACH ROW UPDATE carts
+SET carts.price_total = carts.price_total + NEW.amount* (
+    
+    SELECT DISTINCT books.sale 
+    FROM book_carts 
+    RIGHT OUTER JOIN books 
+    ON book_carts.book_id = books.id
+	WHERE NEW.book_id =books.id)
+WHERE carts.id = NEW.cart_id
+$$
+DELIMITER ;
+
+
+DELIMITER $$
+CREATE TRIGGER `giam_tien_cart` AFTER DELETE ON `book_carts`
+ FOR EACH ROW UPDATE carts
+SET carts.price_total = carts.price_total - OLD.amount*(
+    SELECT DISTINCT books.sale
+    FROM books LEFT OUTER JOIN book_carts
+    ON book_carts.book_id = books.id
+    WHERE OLD.book_id = books.id 
+)
+WHERE carts.id = OLD.cart_id
+$$
+DELIMITER ;
+
+
+DELIMITER $$
+CREATE TRIGGER `increase_cart_update` AFTER UPDATE ON `book_carts`
+ FOR EACH ROW UPDATE carts
+SET carts.price_total = carts.price_total + (NEW.amount - OLD.amount)*(
+SELECT DISTINCT books.sale 
+    FROM books LEFT OUTER JOIN book_carts 
+    ON book_carts.book_id = books.id
+    WHERE NEW.book_id = books.id)
+WHERE carts.id = NEW.cart_id
+$$
 DELIMITER ;
 
 

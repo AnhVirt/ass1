@@ -25,18 +25,11 @@
 	  	<div class="sidebar">
 	    	<ul class="nav navbar-nav navbar-right">
     			<li>
-<<<<<<< HEAD
-    				<img src="<?=$this->user->avatar_url?>" style="width: 30px;height: 30px;">
-	      			<div class="btn btn-shopping-cart" href="#">
-	      				<i class="fa fa-shopping-cart"></i> 
-	      				Your cart  <span class="label label-default">
-=======
     				<a href="/carts/checkout" style="padding: 0px;outline: none;background: none;">
       			<span class="btn btn-shopping-cart" style="font-weight: bold" >
       				
       				<i class="fa fa-shopping-cart"></i> 
 	      				Your cart  <span class="label label-default" id ="amount-cart">
->>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 	      				<?php
 	      					if (isset($_SESSION["email"]))
@@ -53,28 +46,20 @@
 				 		</span>
     				 	</a>
     			</li>
-	      		<li>
 	      			<?php 
+	      		 echo '<li>';
 								if (!isset($_SESSION["email"]))
 
 									echo '<span class="btn btn-loggin" style="font-weight: bold" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</span>';
-								else
-<<<<<<< HEAD
-									echo '<div class="btn btn-loggin" href="#" >'.$this->user->last_name.'
-=======
-									echo '<span class="btn btn-loggin" style="font-weight: bold"	>'.$this->user->first_name.'
->>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
+								else{
+									
+
+									echo '<span class="btn btn-loggin" style="font-weight: bold">'.$this->user->first_name.'
+
 										<div class="dropdown-login">
 	        			<ul class="dropdown-login-hover">
 		        			<li>
-		        				<a href="#">Your Information</a>
-		        			</li>
-		        			<li>
-		        				<a href="#">Your Information</a>
-		        			</li>
-		        			<li>
-		        				<a href="#">Change password</a>
-
+		        				<a href="/users/information">Your Information</a>
 		        			</li>
 		        			<li>
 		        				<a href="#" id="user-logout" >Log Out</a>
@@ -83,9 +68,10 @@
 	        		</div>
 
 								</span>';
+	      		echo '</li>';
+	      		echo '<img src="'.$this->user->avatar_url.'" style="height: 42px;" class="img-circle" alt="avatar" title="'.$this->user->last_name.'"">';
+								}
 								 ?>
-	        		
-	      		</li>
 	    	</ul>
 	  	</div>
 	  </div>

@@ -83,7 +83,8 @@
 		public function information(){
 			if (!Session::get('email',true))
 				Session::destroy();
-			$this->current_user=Controller::current_user();
+			$current_id=Controller::current_user()->id;
+			$this->mycart=Controller::getMycart($current_id);
 			$this->view->render('information/user');
 		}
 		public function changeif(){
