@@ -1,29 +1,37 @@
 <nav class="nav-responsive" id="nav-responsive">
 		<div class="nav-main">
 			<div class="user-tab">
-				<span style='left: 100px;top: 10px;color: white;position: absolute;'> Name User </span>
+				<span style='left: 100px;top: 10px;color: white;position: absolute;'> <?php echo $this->user->first_name.' '.$this->user->last_name ?> </span>
 				<div class="img-name">
-					<img alt="images" src="/lib/images/khong-gia-dinh.jpg" class="img-circle">
+					<img alt="images" src="<?php echo $this->user->avatar_url ?>" class="img-circle">
 				</div>
 				<ul>
-					<li>
 						<?php 
-						if (!isset($_SESSION["email"]))
-
+						if (!isset($_SESSION["email"])){
+							echo 					'<li>';
 							echo '<a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>';
-						else
-							echo '<a href="#" >xxxxxxx</a>';
-						 ?>
+							echo '<a href="#" >'.$this->user->first_name.'</a>
 						
-					</li>
-					<li>
-						<a href="#">Sign up</a>
-					</li>
+								</li>
+								<li>
+									<a href="#">Sign up</a>
+								</li>
+						';
+							
+						}
+						 ?>
 				</ul>
 			</div>
 			<div class="responsive-tab">
 				<ul class="overflow-nav">
-					<li class="menu-link"><a href="cart.html">Your cart <i class="fa fa-shopping-cart"></i>  <span class="badge">10</span></a></li>
+					<li class="menu-link"><a href="cart.html">Your cart <i class="fa fa-shopping-cart"></i>  
+						<?php
+	      					if (isset($_SESSION["email"]))
+	      				 		echo $this->cart->total;
+	      				 		else 
+	      				 		echo 0; ?>
+
+					</a></li>
 					<li class="menu-link menu-link-main">
 							<a href="categories.html">Home</a>						
 					</li>

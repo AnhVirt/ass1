@@ -16,12 +16,16 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Cơ sở dữ liệu: `stores`
 --
+<<<<<<< HEAD
 CREATE DATABASE IF NOT EXISTS `stores` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci;
+=======
+CREATE DATABASE IF NOT EXISTS `stores` DEFAULT CHARACTER SET utf8 COLLATE utf8_vietnamese_ci;
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 USE `stores`;
 
 -- --------------------------------------------------------
@@ -34,9 +38,15 @@ DROP TABLE IF EXISTS `books`;
 CREATE TABLE IF NOT EXISTS `books` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category_id` int(11) DEFAULT NULL,
+<<<<<<< HEAD
   `author` varchar(50) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `name` varchar(100) COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `description` text COLLATE utf8mb4_vietnamese_ci NOT NULL,
+=======
+  `author` varchar(50) COLLATE utf8_vietnamese_ci DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8_vietnamese_ci NOT NULL,
+  `description` text COLLATE utf8_vietnamese_ci NOT NULL,
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
   `price` bigint(20) DEFAULT '0',
   `num_buy` int(11) DEFAULT '0',
   `amount` int(11) DEFAULT '10',
@@ -46,7 +56,11 @@ CREATE TABLE IF NOT EXISTS `books` (
   `update_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `category_id` (`category_id`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 --
 -- Đang đổ dữ liệu cho bảng `books`
@@ -104,7 +118,11 @@ CREATE TABLE IF NOT EXISTS `book_carts` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `item` (`cart_id`,`book_id`),
   KEY `book_id` (`book_id`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+=======
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 --
 -- Bẫy `book_carts`
@@ -130,18 +148,34 @@ DROP TABLE IF EXISTS `carts`;
 CREATE TABLE IF NOT EXISTS `carts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
+<<<<<<< HEAD
   `action` varchar(10) COLLATE utf8mb4_vietnamese_ci NOT NULL,
+=======
+  `action` varchar(10) COLLATE utf8_vietnamese_ci NOT NULL,
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
   `price_total` bigint(20) NOT NULL DEFAULT '0',
   `created_at` datetime DEFAULT NULL,
   `update_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+=======
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 --
 -- Bẫy `carts`
 --
 DROP TRIGGER IF EXISTS `before_update_carts`;
+<<<<<<< HEAD
+DELIMITER $$
+CREATE TRIGGER `before_update_carts` BEFORE UPDATE ON `carts` FOR EACH ROW SET NEW.update_at=CURRENT_TIMESTAMP
+$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `increase_buy_book`;
+=======
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 DELIMITER $$
 CREATE TRIGGER `before_update_carts` BEFORE UPDATE ON `carts` FOR EACH ROW SET NEW.update_at=CURRENT_TIMESTAMP
 $$
@@ -187,9 +221,15 @@ DELIMITER ;
 DROP TABLE IF EXISTS `categories`;
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+<<<<<<< HEAD
   `name` varchar(50) COLLATE utf8mb4_vietnamese_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+=======
+  `name` varchar(50) COLLATE utf8_vietnamese_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 --
 -- Đang đổ dữ liệu cho bảng `categories`
@@ -216,11 +256,19 @@ CREATE TABLE IF NOT EXISTS `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `book_id` int(11) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
+<<<<<<< HEAD
   `description` text COLLATE utf8mb4_vietnamese_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `book_id` (`book_id`),
   KEY `user_id` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+=======
+  `description` text COLLATE utf8_vietnamese_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `book_id` (`book_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 -- --------------------------------------------------------
 
@@ -235,7 +283,11 @@ CREATE TABLE IF NOT EXISTS `images` (
   `book_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `book_id` (`book_id`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 --
 -- Đang đổ dữ liệu cho bảng `images`
@@ -280,6 +332,7 @@ DELIMITER ;
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+<<<<<<< HEAD
   `first_name` varchar(50) COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `last_name` varchar(50) COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `email` varchar(30) COLLATE utf8mb4_vietnamese_ci NOT NULL,
@@ -290,12 +343,28 @@ CREATE TABLE IF NOT EXISTS `users` (
   `address` text COLLATE utf8mb4_vietnamese_ci,
   `avatar_url` blob NOT NULL,
   `token_reset` varchar(100) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+=======
+  `first_name` varchar(50) COLLATE utf8_vietnamese_ci NOT NULL,
+  `last_name` varchar(50) COLLATE utf8_vietnamese_ci NOT NULL,
+  `email` varchar(30) COLLATE utf8_vietnamese_ci NOT NULL,
+  `phone` varchar(15) COLLATE utf8_vietnamese_ci DEFAULT NULL,
+  `password` varchar(50) COLLATE utf8_vietnamese_ci NOT NULL,
+  `admin` tinyint(1) DEFAULT '0',
+  `birth_day` date DEFAULT NULL,
+  `address` text COLLATE utf8_vietnamese_ci,
+  `avatar_url` blob NOT NULL,
+  `token_reset` varchar(100) COLLATE utf8_vietnamese_ci DEFAULT NULL,
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
   `created_at` datetime DEFAULT NULL,
   `update_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `users` (`email`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 --
 -- Đang đổ dữ liệu cho bảng `users`
@@ -311,7 +380,11 @@ INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `phone`, `passwor
 --
 DROP TRIGGER IF EXISTS `before_create_user`;
 DELIMITER $$
+<<<<<<< HEAD
 CREATE TRIGGER `before_create_user` BEFORE INSERT ON `users` FOR EACH ROW SET  NEW.avatar_url = CASE WHEN NEW.avatar_url IS NULL THEN 'https://www.shareicon.net/data/2017/05/09/885769_user_512x512.png' ELSE NEW.avatar_url END,
+=======
+CREATE TRIGGER `before_create_user` BEFORE INSERT ON `users` FOR EACH ROW SET  NEW.avatar_url = CASE WHEN NEW.avatar_url IS NULL THEN 'https://www.shareicon.net/data/2017/05/09/885769_user_512x512.png' ELSE NEW.avatar_url END,
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
   NEW.password = MD5(NEW.password),NEW.update_at=CURRENT_TIMESTAMP,NEW.created_at=CURRENT_TIMESTAMP
 $$
 DELIMITER ;

@@ -6,7 +6,9 @@
 
 		}
 		function show($id_book){
-			$this->view->render('books/show');
+			$book = new BookModel;
+
+			$this->view->render('books/show',$book->find($id_book));
 		}
 		function search($keywork){
 			$book = new BookModel;

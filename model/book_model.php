@@ -14,7 +14,7 @@
 
 		public function buy($book_id,$cart_id,$amount = 1){
 			$query = "INSERT INTO book_carts(cart_id,book_id,amount) VALUES ('".$cart_id."','".$book_id."','".$amount."') ON DUPLICATE KEY UPDATE amount = amount + '".$amount."'";
-			return mysqli_query($this->db->get_db(),$query);
+			return  mysqli_query($this->db->get_db(),$query);
 		}
 
 

@@ -25,30 +25,45 @@
 	  	<div class="sidebar">
 	    	<ul class="nav navbar-nav navbar-right">
     			<li>
+<<<<<<< HEAD
     				<img src="<?=$this->user->avatar_url?>" style="width: 30px;height: 30px;">
 	      			<div class="btn btn-shopping-cart" href="#">
 	      				<i class="fa fa-shopping-cart"></i> 
 	      				Your cart  <span class="label label-default">
+=======
+    				<a href="/carts/checkout" style="padding: 0px;outline: none;background: none;">
+      			<span class="btn btn-shopping-cart" style="font-weight: bold" >
+      				
+      				<i class="fa fa-shopping-cart"></i> 
+	      				Your cart  <span class="label label-default" id ="amount-cart">
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 
 	      				<?php
 	      					if (isset($_SESSION["email"]))
 	      				 		echo $this->cart->total;
 	      				 		else 
-	      				 		echo 0; ?></span> 
+	      				 		echo 0; ?>
+	      				 			
+	      				 		</span> 
 		      		<div class="dropdown-cart">
 								<ul class="dropdown-cart-hover">
 									<li></li>
 								</ul>
 							</div>
-	      		</div>
+				 		</span>
+    				 	</a>
     			</li>
 	      		<li>
 	      			<?php 
 								if (!isset($_SESSION["email"]))
 
-									echo '<div class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</div>';
+									echo '<span class="btn btn-loggin" style="font-weight: bold" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</span>';
 								else
+<<<<<<< HEAD
 									echo '<div class="btn btn-loggin" href="#" >'.$this->user->last_name.'
+=======
+									echo '<span class="btn btn-loggin" style="font-weight: bold"	>'.$this->user->first_name.'
+>>>>>>> fc39b51b809f9d4d4c2811e9577c8300dfed8ad8
 										<div class="dropdown-login">
 	        			<ul class="dropdown-login-hover">
 		        			<li>
@@ -67,7 +82,7 @@
 		        		</ul>
 	        		</div>
 
-								</div>';
+								</span>';
 								 ?>
 	        		
 	      		</li>

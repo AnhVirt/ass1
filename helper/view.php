@@ -29,6 +29,9 @@
 					case 'books/search':
 						$this->search = $message;
 						break;
+					case 'books/show':
+						$this->top_weekend  = Controller::top_weekend();
+						$this->book= $message;
 					default:
 						# code...
 						break;
