@@ -30,6 +30,7 @@
 		{
 			//unset($_SESSION);
 			session_destroy();
+			echo $_SESSION["email"];
 			header('Location: /',true,301);
 		}
 		
