@@ -79,6 +79,42 @@
 		public function show(){
 			$email = Session::get(["email"]);
 		}
+		public function information(){
+			if (!Session::get('email',true))
+				Session::destroy();
+			$this->current_user=Controller::current_user();
+			$this->view->render('information/user');
+		}
+		public function changeif(){
+			if($_SERVER["REQUEST_METHOD"] == 'POST')
+			{
+				if (Session::get('email',true))
+				{
+					$email = $_POST["email_us"];
+					$password = $_POST["password_us"];
+					$first_name = $_POST["firstname_us"];
+					$last_name = $_POST["lastname_us"];
+					$birth_day = $_POST["birthday_us"];
+					$address = $_POST["address_us"];
+					$phone = $_POST["phone_us"];
+					$avt_url = $_POST["avt_url"];
+					$user = new UserModel;
+					$current_id=Controller::current_user()->id;
+					if(!empty($password)){
+						$password = md5($password);
+						Controller::changePassUser($current_id,$password);
+					}
+					$user = Controller::changeInfoUser($current_id,$first_name,$last_name,$phone,$email,$birth_day,$address,$avt_url);
+					if (!$user)
+					 echo("Error description: " . mysqli_error($user->db->get_db()));
+					else
+						header('Location: /users/information',true,301);
+
+				}			
+				else
+					header('Location: /',true,301);
+		}
+		}
 	}
 
  ?>

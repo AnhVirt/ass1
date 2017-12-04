@@ -1,0 +1,44 @@
+		#information{
+			
+		}
+		#detail{
+			width: 50%;
+		}
+		#information .tab-content {
+		  color : blue;
+		  background-color: white;
+		  padding : 5px 15px;
+		}
+		#information .nav-pills > li > a {
+		  border-radius: 0;
+		  font-size: 100%;
+		}
+		#form-info #editpass,#editfname,#editlname,#editemail,#cancel{
+			text-decoration: none;
+		}
+		#editfname:hover,#editlname:hover,#editemail:hover,#editpass:hover,#editavt:hover,#editadd:hover,#editbir:hover,#editphone:hover{
+			cursor: pointer;
+			color: blue;
+		}
+		#my_file{
+			display: none;
+		}
+@media (max-width: 767px){
+	#detail{
+		width: 100%;
+		max-width: 767px;
+
+	}
+	#detail h4{
+		font-size: 15px;
+	}
+}
+@media (max-width: 319px){
+	#detail{
+		width: 100% !important;
+		max-width: 319px;
+	}
+	#detail h4{
+		font-size: 15px;
+	}
+}

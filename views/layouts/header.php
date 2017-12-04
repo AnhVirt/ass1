@@ -25,6 +25,7 @@
 	  	<div class="sidebar">
 	    	<ul class="nav navbar-nav navbar-right">
     			<li>
+    				<img src="<?=$this->user->avatar_url?>" style="width: 30px;height: 30px;">
 	      			<div class="btn btn-shopping-cart" href="#">
 	      				<i class="fa fa-shopping-cart"></i> 
 	      				Your cart  <span class="label label-default">
@@ -47,7 +48,7 @@
 
 									echo '<div class="btn btn-loggin" href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</div>';
 								else
-									echo '<div class="btn btn-loggin" href="#" >'.$this->user->first_name.'
+									echo '<div class="btn btn-loggin" href="#" >'.$this->user->last_name.'
 										<div class="dropdown-login">
 	        			<ul class="dropdown-login-hover">
 		        			<li>
