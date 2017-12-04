@@ -7,9 +7,9 @@
 		// 		';
 		// 	}
 		// 	else{
-			$success = "<div id='popup1' class='overlay-pop-up'><div class='popup'><h3 style='text-align:center;'>Success, book is added into your cart</h3><span class='close' onclick= $('#popup1').remove()>&times;</span></div>";
+			$success = "<div id='popup1' class='overlay-pop-up alert-dismissible alert' role='alert'><div class='popup'><h3 style='text-align:center;'>Success, book is added into your cart</h3><span class='close' data-dismiss='alert'  >&times;</span></div>";
 				echo '$("body").append($("'.$success.'"));';
-				echo '$("#popup1").fadeOut(3000,function(){  $(this).remove();   });';
+				echo '($("#popup1")).fadeOut(3000,function(){  $(this).remove();   });';
 			// }
 
 
