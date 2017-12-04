@@ -33,7 +33,7 @@
 						$this->top_weekend  = Controller::top_weekend();
 						$this->book= $message;
 					case 'information/user':
-						$this->mycart=Controller::getMycart($this->user->id);
+						$this->mycart=$message;
 						break;
 					default:
 						# code...

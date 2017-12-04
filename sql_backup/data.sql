@@ -116,6 +116,7 @@ DELIMITER ;
 CREATE TABLE images(
 	id Integer PRIMARY KEY AUTO_INCREMENT,
 	image_url BLOB NOT NULL,
+	image_detail_url BLOB NOT NULL,
 	book_id Integer,
 	FOREIGN KEY(book_id) REFERENCES books(id)
 	ON DELETE SET NULL ON UPDATE CASCADE

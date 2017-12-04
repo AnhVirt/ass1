@@ -85,7 +85,7 @@
 				Session::destroy();
 			$current_id=Controller::current_user()->id;
 			$this->mycart=Controller::getMycart($current_id);
-			$this->view->render('information/user');
+			$this->view->render('information/user',$this->mycart);
 		}
 		public function changeif(){
 			if($_SERVER["REQUEST_METHOD"] == 'POST')
