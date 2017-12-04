@@ -42,14 +42,8 @@
 			$user = Controller::current_user();
 			$cart= new CartModel($user->id);
 			$result = $cart->update($cart->select($user->id)->id,$user->id,"pending");
-		if ($result){
-				$cart->insert($user->id);
-				$this->view->render('carts/payment',$result);
-				
-		}
-		else{
+			$cart->insert($user->id);
 			$this->view->render('carts/payment',$result);
-		}
 
 		}
 
