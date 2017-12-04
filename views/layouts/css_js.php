@@ -19,8 +19,11 @@
   <link rel="stylesheet" href="/lib/style/login.css">
   <link rel="stylesheet" href="/lib/style/book.css">
   <link rel="stylesheet" href="/lib/style/responsive-nav.css">
-  <link rel="stylesheet" href="/lib/style/menu.css">
-  <link rel="stylesheet" href="/lib/style/footer.css">
+ 
+ <link rel="stylesheet" href="/lib/style/menu.css">
+ <link rel="stylesheet" href="/lib/style/footer.css">
+ <link rel="stylesheet" type="text/css" href="/lib/style/information-user.css">
+
   <script src="/lib/javascripts/categories.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/lib/javascripts/book.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/lib/javascripts/responsive-nav.js" type="text/javascript" charset="utf-8" async defer></script>

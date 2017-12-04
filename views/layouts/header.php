@@ -46,24 +46,20 @@
 				 		</span>
     				 	</a>
     			</li>
-	      		<li>
 	      			<?php 
+	      		 echo '<li>';
 								if (!isset($_SESSION["email"]))
 
 									echo '<span class="btn btn-loggin" style="font-weight: bold" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</span>';
-								else
-									echo '<span class="btn btn-loggin" style="font-weight: bold"	>'.$this->user->first_name.'
+								else{
+									
+
+									echo '<span class="btn btn-loggin" style="font-weight: bold">'.$this->user->first_name.'
+
 										<div class="dropdown-login">
 	        			<ul class="dropdown-login-hover">
 		        			<li>
-		        				<a href="#">Your Information</a>
-		        			</li>
-		        			<li>
-		        				<a href="#">Your Information</a>
-		        			</li>
-		        			<li>
-		        				<a href="#">Change password</a>
-
+		        				<a href="/users/information">Your Information</a>
 		        			</li>
 		        			<li>
 		        				<a href="#" id="user-logout" >Log Out</a>
@@ -72,9 +68,10 @@
 	        		</div>
 
 								</span>';
+	      		echo '</li>';
+	      		echo '<img src="'.$this->user->avatar_url.'" style="height: 42px;" class="img-circle" alt="avatar" title="'.$this->user->last_name.'"">';
+								}
 								 ?>
-	        		
-	      		</li>
 	    	</ul>
 	  	</div>
 	  </div>

@@ -43,8 +43,18 @@
 			$cart = new BookCartModel;
 			return $cart->get_all($user_id,$cart_id);
 		}
-
-
+		function changeInfoUser($id,$first_name,$last_name,$phone,$email,$birthday,$address,$avt_url){
+			$user=new UserModel;
+			return $user->update($id,$first_name,$last_name,$phone,$email,$birthday,$address,$avt_url);
+		}
+		function changePassUser($id,$password){
+			$user=new UserModel;
+			return $user->updatepass($id,$password);
+		}
+		function getMycart($current_id){
+			$user= new UserModel;
+			return $user->getCart($current_id);
+		}
 
 	}
 

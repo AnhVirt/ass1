@@ -115,7 +115,7 @@
 		</div>
 		<div class="container" id="container-detail">
 			<div class="col-md-6 col-xs-12">
-				<img src="<?php echo $this->book->image_url ?>" alt="images" class="media-object img-responsive" style="width: 100%;text-align: center;">
+				<img src="<?php echo $this->book->image_detail_url ?>" alt="images" class="media-object img-responsive" style="width: 100%;text-align: center;">
 			</div>
 			<div class="col-md-6 col-xs-12" id="detail-book">
 				<div  id="detail-1">
@@ -130,16 +130,21 @@
 					<a href="#" class="glyphicon glyphicon-star-empty" id="star4"></a>
 					<a href="#" class="glyphicon glyphicon-star-empty" id="star5"></a>
 					</h3>
-					<span><p class="money">51.000 ₫</p> (Đã có VAT)</span>
+					<span><p class="money"><?php echo $this->book->sale ?> ₫</p> (Đã có VAT)</span>
 				</div>
-				<pre> 
-					Tiết kiệm: 20% (13.000 ₫)
-					Giá thị trường: 64.000 ₫
-				</pre>
-				<pre> 
-					Bạn muốn nhận hàng trước 10h sáng hôm nay 19/10?
-					Đặt hàng trong 7 giờ 40 phút tới và chọn giao hàng 2h ở bước thanh toán
-				</pre>
+<?php
+	$num_sale=(int)$this->book->sale;
+	$num_price=(int)$this->book->price;
+	 $sale = round((1-$num_sale/$num_price)*100);
+	 $money = $sale*$this->book->price/100;
+?>
+<pre> 
+	Tiết kiệm: <?= $sale?>% (<?= $money?> đ)
+	Giá thị trường: <?php echo $this->book->price ?> ₫
+</pre>
+<pre> 
+	<?php echo $this->book->description?>
+</pre>
 				<a href="/collects/buy?id=<?php echo $this->book->id ?>" class="btn btn-block" data-remote="true" data-method="POST"><p class="color-i"><i class="fa fa-shopping-cart"></i> Đặt hàng ngay</p></a><br>
 			</div>
 		</div>
