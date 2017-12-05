@@ -9,13 +9,11 @@
 			}
 		}
 		public function render($name,$message = NULL){
-			if ($_SERVER['REQUEST_METHOD'] == 'POST')
-			{
+			if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 				include_once 'views/'.$name.'.php';
 			}
-			else
-			{
+			else if ($_SERVER['REQUEST_METHOD'] == 'GET'){
 				switch ($name) {
 
 					case 'home/index':
@@ -35,15 +33,28 @@
 					case 'information/user':
 						$this->mycart=$message;
 						break;
+					case 'admin/users':
+						$this->users = $message;
+						break;
+					case 'admin/carts':
+						$this->carts = $message;
+						break;
+					case 'admin/books' || 'admin/edit':
+						$this->books = $message;
+						break;
 					default:
 						# code...
 						break;
 				}
-				include_once 'views/layouts/modal_login.php';
-				include_once 'views/'.$name.'.php';
-				include_once 'views/layouts/footer.php';
-				include_once 'views/layouts/nav_responsive.php';
-
+				if (explode('/',$name)[0] != 'admin'){
+					include_once 'views/layouts/modal_login.php';
+					include_once 'views/'.$name.'.php';
+					include_once 'views/layouts/footer.php';
+					include_once 'views/layouts/nav_responsive.php';
+					
+				}
+				else
+					include_once 'views/'.$name.'.php';
 			}
 
 			

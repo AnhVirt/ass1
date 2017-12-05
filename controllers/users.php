@@ -108,7 +108,7 @@
 					}
 					$user = Controller::changeInfoUser($current_id,$first_name,$last_name,$phone,$email,$birth_day,$address,$avt_url);
 					if (!$user)
-					 echo("Error description: " . mysqli_error($user->db->get_db()));
+					 header('Location: /users/information',true,301);
 					else
 						header('Location: /users/information',true,301);
 

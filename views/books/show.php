@@ -14,7 +14,7 @@
 		<div class="container" id ="menu-desktop">
 			<ul class="menu">
 				<li class="dropdown-hover">
-					<a href="index.html">Home</a>
+					<a href="/">Home</a>
 					<ul>
 				    <li><a href="#">HTML</a></li>
 				    <li><a href="#">CSS</a></li>
@@ -115,7 +115,7 @@
 		</div>
 		<div class="container" id="container-detail">
 			<div class="col-md-6 col-xs-12">
-				<img src="<?php echo $this->book->image_detail_url ?>" alt="images" class="media-object img-responsive" style="width: 100%;text-align: center;">
+				<img src="<?php echo $this->book->image_url ?>" alt="images" class="media-object img-responsive" style="width: 100%;text-align: center;">
 			</div>
 			<div class="col-md-6 col-xs-12" id="detail-book">
 				<div  id="detail-1">

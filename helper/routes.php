@@ -3,7 +3,15 @@
 		function __construct(){
 			if (isset($_GET['url'])){
 				$url = explode("/",$_GET['url']);
-					$file = $_SERVER['DOCUMENT_ROOT'].'/controllers/'.$url[0].".php";
+					if ($url[0] != 'admin'){
+						$file = $_SERVER['DOCUMENT_ROOT'].'/controllers/'.$url[0].".php";
+					}
+					else{
+						if (isset($url[1]))
+							$file = $_SERVER['DOCUMENT_ROOT'].'/controllers/admin/'.$url[1].".php";
+						else
+							header('Location: /');
+					}
 					if (file_exists($file))
 						require $file;
 					else
@@ -13,21 +21,45 @@
 						$controller->error_404();
 						exit;
 					}
-					$controller = new $url[0];
-					if(isset($_GET["q"])){
+					if  ($url[0] != 'admin'){
 
-						if (isset($url[1])){
-							$controller->{$url[1]}($_GET["q"]);
+						$controller = new $url[0];
+						if(isset($_GET["q"])){
+							if (isset($url[1]))
+								$controller->{$url[1]}($_GET["q"]);
+							else
+								$controller->{'index'}($_GET["q"]);	
 						}
-						else
-							$controller->{'index'}($_GET["q"]);	
+						else{
+							if (isset($url[1]))
+								$controller->{$url[1]}();
+							else
+								$controller->{'index'}();
+						}
 					}
 					else{
-						if (isset($url[1])){
-							$controller->{$url[1]}();
+						$c = $url[0].$url[1];
+						$controller = new $c;
+						if(isset($_GET["q"])){
+
+							if (isset($url[2])){
+								$controller->{$url[2]}($_GET["q"]);
+							}
+							else
+								$controller->{'index'}($_GET["q"]);	
 						}
-						else
-							$controller->{'index'}();
+						else{
+							if (isset($url[2])){
+								$controller->{$url[2]}();
+							}
+							else
+								$controller->{'index'}();
+						}
+
+
+
+
+
 					}
 				
 			}

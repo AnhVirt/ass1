@@ -13,6 +13,12 @@
 			LIMIT 1";
 			return mysqli_fetch_object(mysqli_query($this->db->get_db(),$query));
 		}
+		public function select_all(){
+			$query = "SELECT carts.*,carts.id as cart_id,users.* FROM carts JOIN users ON carts.user_id = users.id ";
+			return mysqli_query($this->db->get_db(),$query);
+
+
+		}
 
 		public function insert($user_id){
 			$query = "INSERT INTO carts(user_id) VALUES ('".$user_id."')";
@@ -20,6 +26,10 @@
 		}
 		public function delete($cart_id,$user_id){
 			$query = "DELETE FROM carts WHERE id = '".$cart_id."' AND user_id = '".$user_id."'";
+			return mysqli_query($this->db->get_db(),$query);
+		}
+		public function delete_by_admin($cart_id){
+			$query = "DELETE FROM carts WHERE id = '".$cart_id."'";
 			return mysqli_query($this->db->get_db(),$query);
 		}
 		public function delete_empty_cart($user_id){
@@ -30,7 +40,10 @@
 			$query = "UPDATE carts SET action ='".$status."' WHERE user_id = '".$user_id."' AND id = '".$cart_id."'";
 			return mysqli_query($this->db->get_db(),$query);
 		}
-
+		public function update_success($cart_id,$status = 'success'){
+				$query = "UPDATE carts SET action ='".$status."' WHERE  id = '".$cart_id."'";
+			return mysqli_query($this->db->get_db(),$query);
+		}
 
 
 	}

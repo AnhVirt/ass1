@@ -57,8 +57,21 @@
 									echo '<span class="btn btn-loggin" style="font-weight: bold">'.$this->user->first_name.'
 
 										<div class="dropdown-login">
-	        			<ul class="dropdown-login-hover">
-		        			<li>
+	        			<ul class="dropdown-login-hover">';
+	        			if ($this->user->admin == '1')
+	        			echo '<li>
+											<a href="/admin/users">Manage users</a>
+											</li>
+											<li>
+											<a href="/admin/books">Manage books</a>
+											</li>
+											<li>
+											<a href="/admin/carts">Manage carts</a>
+											</li>
+
+	        			';
+	        			echo
+		        			'<li>
 		        				<a href="/users/information">Your Information</a>
 		        			</li>
 		        			<li>
