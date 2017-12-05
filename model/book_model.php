@@ -28,7 +28,7 @@
 			return mysqli_query($this->db->get_db(),$query);
 		}
 		public function delete($book_id){
-			$query = "DELETE books  WHERE books.id ='".$book_id."'";
+			$query = "DELETE FROM books  WHERE books.id ='".$book_id."'";
 			return mysqli_query($this->db->get_db(),$query);
 		}
 		public function buy($book_id,$cart_id,$amount = 1){
