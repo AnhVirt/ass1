@@ -16,6 +16,7 @@
 			<caption><h2>Books</h2></caption>
 			<thead>
 				<tr>
+					<th>ID</th>
 					<th>Name</th>
 					<th>Author</th>
 					<th>Description</th>
